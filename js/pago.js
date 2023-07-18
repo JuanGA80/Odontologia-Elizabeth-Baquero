@@ -6,7 +6,7 @@ listElements.forEach( listElements =>{
       let height = 0;
       let menu = listElements.nextElementSibling;
       if (menu.clientHeight == "0") {
-          height = 150;
+          height = 160;
       }
       
       menu.style.height = `${height}px`;
