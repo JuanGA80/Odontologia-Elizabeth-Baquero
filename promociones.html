@@ -241,11 +241,11 @@
           nuestros expertos se comunicará contigo.
         </p>
         <img src="imagenes/contacto.png" alt="" />
-        <form action="">
+        <form action="email.php" method="POST">
           <label for="Name">Hola! mi nombre es:</label>
           <input type="text" id="Name" name="Name" required/> <br />
           <label for="tratamiento">Estoy interesado(a) en</label>
-          <select name="bebida" required>
+          <select name="Tratamiento" id="Tratamiento" required>
             <option value="">Elije tu tratamiento</option>
             <option>Endodoncia</option>
             <option>Ortodoncia</option>
@@ -428,5 +428,8 @@
     <script>
       AOS.init();
     </script>
+        <?php
+        include("email.php");
+        ?>
   </body>
 </html>
