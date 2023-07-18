@@ -300,7 +300,7 @@
         <h2>BICHECTOMÍA</h2>
         <p>
           La bichectomía es un procedimiento quirúrgico el cual consiste en la
-          extracción de las bolsas de Bichat que se ubican en cada mejilla
+          extracción de las bolsas de bichat que se ubican en cada mejilla
           generando un aspecto facial más delgado.
         </p>
         <p>
@@ -327,7 +327,7 @@
           generando una tonalidad visiblemente más clara y llamativa.
         </p>
         <p>
-          En Odontología Elizabeth Baquero manejamos dos clases de aclaramientos
+          En Odontología Elizabeth Baquero manejamos dos clases de aclaramiento
           y diferentes paquetes para lograr una mejor tonalidad:
           <br />
           -El aclaramiento casero, que consta de una férula personalizada y un
@@ -335,7 +335,7 @@
           independientemente.
 
           <br />
-          -El aclaramiento clínico con láser, el cual se realiza maximo 3
+          -El aclaramiento clínico con láser, el cual se realiza máximo 3
           sesiones cada una de 15 minutos en un mismo día.
           <br />
 
@@ -936,11 +936,11 @@
           nuestros expertos se comunicará contigo.
         </p>
         <img src="imagenes/contacto.png" alt="" />
-        <form action="">
+        <form action="email.php" method="POST">
           <label for="Name">Hola! mi nombre es:</label>
           <input type="text" id="Name" name="Name" required/> <br />
           <label for="tratamiento">Estoy interesado(a) en</label>
-          <select name="bebida" required>
+          <select name="Tratamiento" id="Tratamiento" required>
             <option value="">Elije tu tratamiento</option>
             <option>Endodoncia</option>
             <option>Ortodoncia</option>
@@ -1124,5 +1124,8 @@
     <script>
       AOS.init();
     </script>
+    <?php
+    include("email.php");
+    ?>
   </body>
 </html>
