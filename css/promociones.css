@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+.hero-promociones {
+  width: 100%;
+  background-image: url(../imagenes/fondo-navidad.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Righteous", cursive;
+}
+.container-promo h2 {
+  font-size: 7em;
+  color: #fff;
+}
+.promos {
+  width: 100%;
+  position: relative;
+}
+.container-promociones {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px auto;
+  animation-name: leftshow;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+.item-promociones img {
+  max-width: 100%;
+  transition: 0.7s;
+}
+.item-promociones img:hover {
+  transform: scale(0.9);
+  transition: 0.7s;
+}
+
+@media (max-width: 768px) {
+  .hero-promociones {
+    width: 100%;
+    background-image: url(../imagenes/fondo-navidad.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Righteous", cursive;
+  }
+  .container-promo h2 {
+    font-size: 3em;
+    color: #fff;
+  }
+  .promos {
+    width: 100%;
+    position: relative;
+    z-index: auto;
+    margin-top: 10px;
+    height: 350px;
+    overflow-x: hidden;
+    padding: 0px 10px;
+    width: 95%;
+    margin: auto;
+  }
+  .container-promociones {
+    margin-top: 50px;
+    display: flex;
+    left: 0;
+    top: 40%;
+    transform: translateY(-50%);
+    gap: 10px;
+    overflow-y: hidden;
+    width: 600%;
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    animation-name: slide;
+    animation-duration: 30s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes slide {
+    0% {
+      left: -50%;
+    }
+    10% {
+      left: -100%;
+    }
+    20% {
+      left: -150%;
+    }
+    30% {
+      left: -200%;
+    }
+    40% {
+      left: -250%;
+    }
+    50% {
+      left: -300%;
+    }
+    60% {
+      left: -350%;
+    }
+    70% {
+      left: -400%;
+    }
+    80% {
+      left: -450%;
+    }
+    90% {
+      left: -500%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  .item-promociones img {
+    width: 320px;
+    height: 320px;
+    object-fit: contain;
+  }
+  .item-promociones img:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+  }
+}
