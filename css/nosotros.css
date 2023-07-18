@@ -259,6 +259,9 @@
 .move{
     transform: translateX(0);
 }
+.cerrarTexto{
+  display: none;
+}
 #cierro{
     position: absolute;
     top:30px;

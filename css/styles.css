@@ -666,7 +666,7 @@ header {
   display: block;
   width: 85%;
   background-color: #002c89;
-  margin: -10px auto 20px auto;
+  margin: 50px auto 20px auto;
   padding: 7px 0px;
   border-radius: 15px;
 }
@@ -874,14 +874,14 @@ form button {
 }
 .btn-contacto {
   position: absolute;
-  bottom: -10px;
+  bottom: -100px;
   left: calc(20% - 20px);
   max-width: 100%;
 }
 .mapa {
   width: 100%;
   background-color: #002c89;
-  padding: 20px;
+  padding: 110px 20px 20px 20px;
   margin: auto;
 }
 .mapa h2 {
@@ -1339,7 +1339,7 @@ footer {
     flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1353,6 +1353,8 @@ footer {
     transition: 0.5s;
     width: 100%;
     background-color: #009ec0;
+    height: 100vh;
+    margin-top: -100px;
   }
   .mostrar {
     -webkit-transform: translateY(60%);

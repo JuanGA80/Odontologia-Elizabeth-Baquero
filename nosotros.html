@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odontología Elizabeth Baquero</title>
+    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
@@ -180,10 +181,10 @@
               >Urgencias
             </a>
           </li>
-          <li><a href="#servicios" class="menu_links">Tratamientos</a></li>
+          <li><a href="index.html#servicios" class="menu_links">Tratamientos</a></li>
 
           <li><a href="#ubicacion" class="menu_links">Ubicación</a></li>
-          <li><a href="#contacto" class="menu_links">Contacto</a></li>
+          <li><a href="#contactodos" class="menu_links">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -456,7 +457,7 @@
 
       <!-- Swiper JS -->
       <div class="container_texto">
-        <i class="far fa-times-circle" id="cierro"></i>
+        <i onclick="cerrarTexto()" class="far fa-times-circle" id="cierro"></i>
         <div class="copy" id="copy_uno">
           <h2>Elizabeth Baquero</h2>
           <p>
@@ -470,16 +471,16 @@
         <div class="copy" id="copy_dos">
           <h2>Paula Fernández</h2>
           <p>
-            Odontologa general, con diplomado en Odontología digital y estética.
+            Odontóloga general, con diplomado en Odontología digital y estética.
             Con conocimientos en prevención, diagnóstico y tratamiento de
             enfermedades bucodentales y habilidades en la práctica clínica para
             ofrecer un servicio odontológico integral.
           </p>
         </div>
         <div class="copy" id="copy_tres">
-          <h2>Olga Ramos</h2>
+          <h2>Olga Calderón</h2>
           <p>
-            Odontologa general Experiencia clínica de 25 años, con diplomados en
+            Odontóloga general Experiencia clínica de 25 años, con diplomados en
             estética dental y diseño de sonrisa.
           </p>
         </div>
@@ -606,8 +607,8 @@
 
     <div class="section_formulario" id="contactodos">
       <div class="item_formulario">
-        <h4>CONTÁCTANOS</h4>
-        <h5>¿ TE LLÁMAMOS ?</h5>
+        <h4>CONTÁCTENOS</h4>
+        <h5>¿ TE LLAMAMOS ?</h5>
         <p>
           Deja tus datos de contacto y uno de <br />
           nuestros expertos se comunicará contigo.
@@ -615,15 +616,15 @@
         <img src="imagenes/contacto.png" alt="" />
         <form action="">
           <label for="Name">Hola! mi nombre es:</label>
-          <input type="text" id="Name" name="Name" /> <br />
-          <label for="tratamiento">Estoy interesdo(a) en</label>
+          <input type="text" id="Name" name="Name" required/> <br />
+          <label for="tratamiento">Estoy interesado(a) en</label>
           <select name="bebida" required>
             <option value="">Elije tu tratamiento</option>
             <option>Endodoncia</option>
             <option>Ortodoncia</option>
             <option>Periodoncia</option>
             <option>Odontopediatría</option>
-            <option>Protesís bucal</option>
+            <option>Prótesis bucal</option>
             <option>Implantes</option>
             <option>Cirugía láser</option>
             <option>Cirugía Maxilofacial</option>
@@ -631,9 +632,9 @@
           </select>
           <br />
           <label for="telefono">Mi celular</label>
-          <input type="tel" id="phone" name="phone" /><br />
+          <input type="tel" id="phone" name="phone" required/><br />
           <label for="correo">Mi correo</label>
-          <input type="email" id="correo" name="correo" />
+          <input type="email" id="correo" name="correo" required/>
 
           <button type="submit">Enviar</button>
         </form>
@@ -649,8 +650,8 @@
     <div class="mapa" id="ubicacion">
       <h2>Nuestras ubicaciones</h2>
       <p>Horarios:</p>
-      <p>Lunes a Viernes de 8:00am a 19:00pm</p>
-      <p>Sábados de 8:00am a 16:00pm</p>
+      <p>Lunes a Viernes de 8:00 a 19:00</p>
+      <p>Sábados de 8:00 a 16:00</p>
       <div class="container_ubiacion">
         <div class="item_ubicacion">
           <div class="item_mapa">
@@ -684,7 +685,7 @@
       <div class="redes_flotantes">
         <img src="imagenes/btn_principal.png" alt="" class="icono_principal" />
         <div class="contacto">
-          <p>¡Da Click y contactanos!</p>
+          <p>¡Da Click y contáctenos!</p>
         </div>
 
         <div class="contactos">
@@ -714,7 +715,7 @@
     </div>
     <footer>
       <div class="item_footer">
-        <h4 class="list__button--click">MENU</h4>
+        <h4 class="list__button--click">MENÚ</h4>
         <ul>
           <li><a href="#">Nosotros</a></li>
           <li><a href="index.html#servicios">Tratamientos</a></li>
@@ -747,7 +748,7 @@
           <ul>
             <li><a href="index.html#todo">Implantes dentales</a></li>
             <li><a href="index.html#todo">Diseño de sonrisa</a></li>
-            <li><a href="index.html#todo">Radiografias</a></li>
+            <li><a href="index.html#todo">Radiografías</a></li>
             <li><a href="index.html#todo">Endodoncia</a></li>
           </ul>
         </div>

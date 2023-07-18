@@ -53,18 +53,15 @@ abrirOcho.addEventListener("click", function(){
 
 
 
-    cerrar.addEventListener('click', function(){
-        modal.classList.remove('move');
-        copyUno.classList.remove('aparecer_texto');
-        copyDos.classList.remove('aparecer_texto');
-        copyTres.classList.remove('aparecer_texto');
-        copyCuatro.classList.remove('aparecer_texto');
-        copyCinco.classList.remove('aparecer_texto');
-        copySeis.classList.remove('aparecer_texto');
-        copySiete.classList.remove('aparecer_texto');
-        copyOcho.classList.remove('aparecer_texto');
-     
-     
+function cerrarTexto(){
+    modal.classList.remove('move');
+    copyUno.classList.remove('aparecer_texto');
+    copyDos.classList.remove('aparecer_texto');
+    copyTres.classList.remove('aparecer_texto');
+    copyCuatro.classList.remove('aparecer_texto');
+    copyCinco.classList.remove('aparecer_texto');
+    copySeis.classList.remove('aparecer_texto');
+    copySiete.classList.remove('aparecer_texto');
+    copyOcho.classList.remove('aparecer_texto');
+}
 
-    })
-    
