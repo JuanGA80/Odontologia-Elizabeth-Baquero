@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 600px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,6 +15,29 @@
 .container-promo h2 {
   font-size: 7em;
   color: #fff;
+}
+.texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #00288d;
+  color: white;
+  padding: 0 20px;
+}
+.texto h2 {
+  margin-bottom: 15px;
+}
+.texto p {
+  margin-bottom: 25px;
+}
+.texto a {
+  padding: 10px 15px;
+  background-color: #feee00;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
 }
 .promos {
   width: 100%;
@@ -39,7 +62,127 @@
   transform: scale(0.9);
   transition: 0.7s;
 }
-
+.container-modal, .container-modal-1, .container-modal-2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(4, 0, 255, 0.822);
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+@keyframes quitarModal {
+  0% {
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+  }
+  50% {
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+@keyframes showModal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container-modal .item-modal img, .container-modal-1 .item-modal img, .container-modal-2 .item-modal img {
+  width: 220px;
+  margin: 20px 0;
+}
+.item-modal {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  color: white;
+  display: none;
+}
+.item-modal .close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #dc3545;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-40px);
+  transform: translateX(40px);
+}
+.item-modal .close i {
+  font-size: 20px;
+  color: white;
+}
+.item-modal .whats {
+  padding: 10px 15px;
+  background-color: #feee00;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  width: 200px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+.item-modal a:nth-last-child(2){
+  background-color: #009ec0;
+}
+.txt-whats {
+  display: flex;
+  flex-direction: column;
+}
+.txt-whats a {
+  margin-bottom: 10px;
+}
+.texto a:nth-last-child(2) {
+  background-color: #009ec0;
+}
+@media (min-width: 768px) {
+  .container-modal .item-modal img, .container-modal-1 .item-modal img, .container-modal-2 .item-modal img {
+    width: 350px;
+  }
+  .container-whats {
+    display: flex;
+  }
+  .whats {
+    margin-right: 10px;
+  }
+  .item-modal .close {
+    width: 50px;
+    height: 50px;
+  }
+  .item-modal .close i {
+    font-size: 30px;
+  }
+  .txt-whats {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .txt-whats a {
+    width: 150px;
+  }
+}
 @media (max-width: 768px) {
   .hero-promociones {
     width: 100%;
@@ -63,27 +206,18 @@
     position: relative;
     z-index: auto;
     margin-top: 10px;
-    height: 350px;
-    overflow-x: hidden;
     padding: 0px 10px;
     width: 95%;
     margin: auto;
   }
   .container-promociones {
-    margin-top: 50px;
-    display: flex;
-    left: 0;
-    top: 40%;
-    transform: translateY(-50%);
-    gap: 10px;
-    overflow-y: hidden;
-    width: 600%;
-    position: absolute;
-    z-index: 2;
-    height: 100%;
-    animation-name: slide;
-    animation-duration: 30s;
-    animation-delay: 2s;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px auto;
+    animation-name: leftshow;
+    animation-duration: 12s;
     animation-iteration-count: infinite;
   }
   @keyframes slide {
@@ -123,7 +257,6 @@
   }
   .item-promociones img {
     width: 320px;
-    height: 320px;
     object-fit: contain;
   }
   .item-promociones img:hover {

@@ -13,7 +13,7 @@
   $mensaje .= "Mensaje enviado el " .date('d/m/Y', time());
 
   //destinatario
-  $destinatario = 'leonelvalentinn@gmail.com';
+  $destinatario = 'elizabeth.baquero@odontologiaelizabethbaquero.com';
   $asunto = "Solicito información sobre " . $tratamiento;
   
   //enviar email
