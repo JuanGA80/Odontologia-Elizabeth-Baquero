@@ -50,19 +50,19 @@ document.getElementById('diseno').addEventListener('click', function () {
 });
 
 document.getElementById('close').addEventListener('click', function() {
-  document.getElementById('container-modal').style.animation = "quitarModal 0.3s linear forwards";
+  document.getElementById('container-modal').style.animation = "quitarModal 0.8s linear forwards";
   container.style.width = "0";
   container.style.height = "0";
   item.style.display = "none";
 })
 document.getElementById('close-1').addEventListener('click', function() {
-  document.getElementById('container-modal-1').style.animation = "quitarModal 0.3s linear forwards";
+  document.getElementById('container-modal-1').style.animation = "quitarModal 0.8s linear forwards";
   container1.style.width = "0";
   container1.style.height = "0";
   item1.style.display = "none";
 })
 document.getElementById('close-2').addEventListener('click', function() {
-  document.getElementById('container-modal-2').style.animation = "quitarModal 0.3s linear forwards";
+  document.getElementById('container-modal-2').style.animation = "quitarModal 0.8s linear forwards";
   container2.style.width = "0";
   container2.style.height = "0";
   item2.style.display = "none";

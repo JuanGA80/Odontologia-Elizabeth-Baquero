@@ -53,6 +53,7 @@
   animation-name: leftshow;
   animation-duration: 12s;
   animation-iteration-count: infinite;
+  justify-items: center;
 }
 .item-promociones img {
   max-width: 100%;
@@ -61,6 +62,9 @@
 .item-promociones img:hover {
   transform: scale(0.9);
   transition: 0.7s;
+}
+.item-promociones img[id=""]:hover {
+  transform: scale(1);
 }
 .container-modal, .container-modal-1, .container-modal-2 {
   position: fixed;
@@ -156,7 +160,38 @@
 .texto a:nth-last-child(2) {
   background-color: #009ec0;
 }
+.texto>div {
+  margin: 10px 0;
+}
+#container-limpieza {
+  position: relative;
+}
+#container-limpieza>div {
+  position: absolute;
+  bottom: 4px;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  background-color: #feed00c9;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: quitarImg 0.5s linear forwards;
+}
+#container-limpieza > div h2 {
+  display: none;
+}
+.item-promociones > h3 {
+  text-align: center;
+  background-color: #00288d;
+  color: white;
+}
 @media (min-width: 768px) {
+  .item-promociones > h3 {
+    display: none;
+  }
   .container-modal .item-modal img, .container-modal-1 .item-modal img, .container-modal-2 .item-modal img {
     width: 350px;
   }
@@ -182,8 +217,37 @@
   .txt-whats a {
     width: 150px;
   }
+  #container-limpieza:hover > div {
+    animation: hoverImg 0.5s linear forwards;
+  }
+  #container-limpieza:hover > div h2{
+    display: block;
+  }
+}
+@keyframes hoverImg {
+  0% {
+    width: 100%;
+    height: 0;
+  }
+  100% {
+    height: 30%;
+    width: 100%;
+  }
+}
+@keyframes quitarImg {
+  0% {
+    height: 30%;
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+    height: 0;
+  }
 }
 @media (max-width: 768px) {
+  .texto {
+    width: 320px;
+  }
   .hero-promociones {
     width: 100%;
     background-image: url(../imagenes/fondo-navidad.jpg);
@@ -262,5 +326,8 @@
   .item-promociones img:hover {
     transform: scale(1.1);
     transition: 0.7s;
+  }
+  .item-promociones a[id="limpieza"] > img:hover {
+    transform: scale(1);
   }
 }
