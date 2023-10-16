@@ -181,7 +181,8 @@
   animation: quitarImg 0.5s linear forwards;
 }
 #container-limpieza > div h2 {
-  display: none;
+  opacity: 0;
+  animation: hoverH22 0.5s linear forwards;
 }
 .item-promociones > h3 {
   text-align: center;
@@ -221,7 +222,23 @@
     animation: hoverImg 0.5s linear forwards;
   }
   #container-limpieza:hover > div h2{
-    display: block;
+    animation: hoverH2 0.5s linear forwards;
+  }
+}
+@keyframes hoverH2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hoverH22 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes hoverImg {
