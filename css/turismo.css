@@ -1,0 +1,862 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    body{
+        background-color: #F2F4F5;
+         
+      }
+      
+      .portada {
+          position: relative;
+          width: 100%;
+           /* Ajusta la altura de la portada como prefieras */
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+         
+          overflow: hidden;
+      }
+      .portada img {
+          background-size: cover;
+          width: 100%;
+      }
+      
+      .texto-portada {
+          background-color: rgba(128, 128, 128, 0.8); 
+          position: absolute;
+          left: 15%; /* Distancia desde el borde derecho */
+          top: 20%; /* Distancia desde el borde superior */
+          color: rgb(0 45 137);
+          padding: 25px;
+          border-radius: 5px;
+      }
+      /* Asegúrate de que el texto esté posicionado correctamente */
+      .texto-portada-info {
+          position: absolute;
+          left: 15%; /* Distancia desde el borde derecho */
+          top: 20%; /* Distancia desde el borde superior */
+          color: rgb(0 45 137);
+          padding: 10px;
+          border-radius: 5px;
+      }
+      .texto-portada p{
+          font-size: x-large;
+      }
+      .texto-portada h2{
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700; /* Puedes ajustar el peso de la fuente si lo prefieres */
+          font-size: 2rem; /* Ajusta el tamaño según tus necesidades */
+          margin-bottom: 1rem; /* Espaciado debajo del encabezado */
+      }
+      .texto-portada h2,
+      .texto-portada p {
+          color: rgb(226, 242, 0);;
+          width: 450px;
+          margin: 0;
+      }
+      .btn-info {
+          display: inline-block;
+          padding: 12px 24px; /* Espaciado interno del botón */
+          font-size: 16px; /* Tamaño del texto */
+          font-weight: bold; /* Negrita para el texto */
+          text-align: center; /* Centrar el texto dentro del botón */
+          color: #ffffff; /* Color del texto */
+          background-color: #007bff; /* Color de fondo */
+          border: none; /* Sin borde */
+          border-radius: 4px; /* Bordes redondeados */
+          cursor: pointer; /* Cambia el cursor cuando se pasa sobre el botón */
+          transition: background-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+      }
+      
+      /* Efecto hover (cuando el mouse está sobre el botón) */
+      .btn-info:hover {
+          background-color: #0056b3; /* Color de fondo más oscuro */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar el botón */
+      }
+      
+      /* Efecto activo (cuando el botón es presionado) */
+      .btn-info:active {
+          background-color: #004494; /* Color de fondo aún más oscuro */
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+          transform: translateY(2px); /* Efecto de presión */
+      }
+      
+      /* Estilo opcional para el foco del botón */
+      .btn-info:focus {
+          outline: none; /* Elimina el contorno por defecto */
+          box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Sombra de enfoque */
+      }
+      
+      /* Botón de acción en la tarjeta */
+      .btn-info {
+          display: flex;
+          align-items: center;
+          padding: 10px 20px;
+          font-size: 14px;
+          color: #fff;
+          background-color: #007bff;
+          border: none;
+          border-radius: 4px;
+          text-align: center;
+          text-decoration: none;
+          transition: background-color 0.3s, box-shadow 0.3s;
+      }
+      
+      .btn-info:hover {
+          background-color: #0056b3;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      
+      .btn-info:active {
+          background-color: #004494;
+          transform: translateY(2px);
+      }
+      
+      /* Estilos generales para la sección de tarjetas */
+      .info-cards {
+          margin-left: 50px;
+          margin-right: 50px;
+          padding: 20px; /* Espaciado interno de la sección */
+          margin-top: 20px; /* Espacio entre la imagen de banner y la sección de tarjetas */
+      }
+      .info-cards h1{
+      
+          margin: 0 0 20px; /* Margen para el título */
+          font-size: 2rem; /* Tamaño del texto del título */
+          color: #333; /* Color del texto del título */
+          text-align: center;
+      }
+      
+      /* Contenedor para cada fila de tarjetas */
+      .card-row {
+          display: flex;
+          justify-content: space-between; /* Espacia las tarjetas uniformemente */
+          margin-bottom: 20px; /* Espacio inferior entre las filas */
+      }
+      
+      /* Estilos individuales para cada tarjeta */
+      .card-Especialidad {
+          background-color: #fff;
+          width: 23%; /* Ancho de las tarjetas, ajusta según el espacio disponible */
+          transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+          border: 3px solid #919191;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 3px -9px 4px 0px rgb(0 0 0 / 10%);
+      }
+      
+      /* Estilo para la imagen de la tarjeta */
+      .card-img {
+          width: 100%; /* Ancho completo de la tarjeta */
+          height: 180px; /* Altura fija para la imagen */
+          object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
+      }
+      
+      /* Contenido de la tarjeta */
+      .card-content {
+          height: 300px;
+          padding: 15px;
+      }
+      
+      /* Título de la tarjeta */
+      .card-title {
+          font-size: 21px;
+          margin: 0 0 10px; /* Espaciado inferior */
+      }
+      .tratamientos-container .tratamiento-card img{
+          width: 50%;
+      }
+      /* Texto descriptivo de la tarjeta */
+      .card-text {
+         
+         text-align: justify;
+          margin-bottom: 15px; /* Espaciado inferior */
+      }
+      .full-width-section {
+          border-radius: 20px;
+          /* width: 100%; */
+          margin-top: -100px;
+          margin-left: 80px;
+          margin-right: 80px;
+          background-color: #002c89;
+          padding: 20px;
+          box-sizing: border-box;
+          display: flex;
+          /* justify-content: space-between; */
+          align-items: center;
+          position: relative; /* Posiciona el div de manera relativa */
+          z-index: 1; /* Asegura que este div esté arriba de otros divs */
+      }
+      .services-section {
+        display: flex; /* Usa Flexbox para alinear los elementos en una fila */
+        flex-wrap: wrap; /* Permite que los elementos se ajusten a una nueva línea si es necesario */
+        justify-content: space-between; /* Espacia los elementos uniformemente */
+        padding:0 80px; /* Ajusta el padding según sea necesario */
+        gap: 20px; /* Espacio entre los elementos */
+    }
+    
+    .service-item {
+        flex: 1; /* Hace que cada elemento ocupe el mismo ancho */
+        box-sizing: border-box; /* Incluye el padding en el tamaño total del contenedor */
+    }
+    
+    .service-icon {
+        width: 50px; /* Ajusta el tamaño del icono según sea necesario */
+        height: 50px; /* Ajusta el tamaño del icono según sea necesario */
+        margin-bottom: 10px; /* Espacio debajo del icono */
+    }
+    .service-item h3 {
+        align-items: center;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        display: flex; 
+        justify-content: space-around; 
+    }
+    
+    .service-item p {
+        font-size: 1rem; /* Tamaño del texto */
+        color: #666; /* Color del texto */
+    }
+      
+    .galery{
+        padding: 20px;
+        background-color: white;
+        margin-top: 100px;
+      }
+    
+      .row {
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+          padding: 0 80px;
+        }
+        
+        /* Create four equal columns that sits next to each other */
+        .column {
+          -ms-flex: 25%; /* IE10 */
+          flex: 25%;
+          max-width: 25%;
+          padding: 0 4px;
+        }
+        
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+          transition: transform 0.5s ease; /* Transición suave para el efecto de zoom */
+        }
+        .column img:hover {
+          transform: scale(1.3); /* Amplía la imagen al 110% */
+      }
+        .header {
+            text-align: center;
+           
+            font-size: 2.5rem;
+            color: #000000;
+            margin-top: 40px; 
+        }
+        .header-footer {
+            padding: 6rem;
+            text-align: center;
+            margin: 0 0 40px;
+            font-size: 1.5rem;
+            color: #000000; /* Color del título */
+          }
+          .brands-section {
+            overflow: hidden; /* Oculta el contenido que está fuera del contenedor del carrusel */
+            position: relative; /* Necesario para el desplazamiento absoluto */
+            width: 100%; /* Ocupa el ancho completo del contenedor */
+            padding: 20px 0; /* Espacio arriba y abajo */
+            background-color: #F2F4F5; /* Color de fondo opcional */
+        }
+        
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+        }
+        
+        .carousel-wrapper {
+            display: flex;
+            width: 200%; /* Asegúrate de que el ancho es el doble del contenedor */
+            animation: scroll 20s linear infinite;
+        }
+        
+        .carousel-item {
+            flex: 0 0 auto;
+            width: 200px;
+            margin-right: 20px;
+        }
+        
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%); /* Mueve solo la mitad del contenedor */
+            }
+        }
+        /* Contenedor principal de la tarjeta */
+/* Estilo general para la tarjeta */
+.travel-card {
+    max-width: 1200px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.travel-card h3 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.travel-card-content {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos en el inicio */
+    justify-content: space-between;
+}
+
+/* Imagen del destino */
+.travel-card-image {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.travel-card-text {
+    flex: 1;
+    padding: 20px;
+}
+.title-container {
+    display: flex;
+    align-items: center; /* Alinea el icono y el título verticalmente */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.title-icon {
+    width: 24px; /* Tamaño del icono */
+    height: auto;
+    margin-right: 10px; /* Espacio entre el icono y el título */
+}
+.travel-card-text h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.travel-card-text p {
+    margin: 10px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.travel-card-details p {
+    margin: 5px 0;
+    color: #777;
+}
+.Precios {
+    margin-top: 20px;
+}
+
+.Precios div {
+    margin-bottom: 10px;
+}
+
+.precio-normal,
+.detalle-incluye,
+.precio-final,
+.precio-final-2personas,
+.incluye {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilos para el botón primario */
+.btn-primary {
+    background-color: #007bff; /* Cambia este color al de tu marca */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Cambia este color al de tu marca */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:focus {
+    outline: none;
+}
+.ahorras{
+    color: green;
+    border-radius: 10px;
+}
+.precio-hidden {
+    text-decoration: line-through; /* Subraya el texto */
+    opacity: 0.5; /* Ajusta la opacidad (0.0 es completamente transparente, 1.0 es completamente opaco) */
+}
+
+.precio-normal{
+    font-size: 25px;
+    font-weight: bold;
+}
+.precio-final-2personas{
+    font-size: small;
+    font-weight: bold;
+}
+.incluye{
+font-size: x-small;
+}
+
+/* Contenedor de estrellas y línea vertical */
+.icons-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente las estrellas y la línea */
+    margin-bottom: 10px; /* Espacio debajo del contenedor de íconos */
+}
+
+.stars-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Espacio entre las estrellas y la línea vertical */
+}
+
+.stars-container img {
+    width: 24px; /* Tamaño de las estrellas */
+    height: auto;
+    margin-right: 5px; /* Espacio entre las estrellas */
+}
+
+.line-vertical {
+    width: 2px; /* Ancho de la línea */
+    background-color: #000000; /* Color de la línea */
+    height: 30px; /* Ajusta la altura según el contenido */
+    margin-right: 20px; /* Espacio entre la línea y los íconos */
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.icon-wrapper img {
+    width: 24px; /* Tamaño de los íconos */
+    height: auto;
+    margin-right: 10px; /* Espacio entre los íconos */
+    vertical-align: middle; /* Alinea verticalmente los íconos con el texto */
+}
+
+
+      /* Estilo para el contenido dentro de la sección */
+      .section-content {
+          
+          max-width: 80%;
+          /* margin: 0 auto; */
+          margin-left: 50px;
+          padding: 20px;
+      }
+      
+      /* Estilo del título */
+      .section-content h1 {
+          color: white;
+          font-size: 30px;
+          margin-bottom: 20px;
+      }
+      
+      /* Estilo del párrafo */
+      .section-content p {
+          font-size: 16px;
+          line-height: 1.6;
+          color: #ffffff;
+      }
+      
+      
+      /* Estilo para el ícono */
+      .full-width-section .ajusteIcon{
+          font-size: 10rem;
+          color: white;
+      }
+      /* Estilos generales para la sección */
+      /* Estilos generales para la sección */
+      .section-afiliacion {
+          display: flex;
+          flex-direction: column; /* Coloca los elementos en una columna */
+          align-items: center; /* Centra los elementos horizontalmente */
+          padding: 20px; /* Ajusta el padding según lo necesites */
+          box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total del contenedor */
+      }
+      
+      /* Estilos para la imagen */
+      .section-image {
+          display: flex; /* Usa Flexbox para centrar la imagen */
+          justify-content: center; /* Centra horizontalmente la imagen */
+          width: 100%; /* Asegúrate de que el contenedor ocupe el 100% del ancho del contenedor padre */
+      }
+      
+      .section-image img {
+          width: 20%; /* Ajusta la imagen al 70% del ancho del contenedor .section-image */
+          max-width: 600px; /* Opcional: establece un ancho máximo para la imagen */
+          height: auto; /* Mantiene la proporción de la imagen */
+          display: block; /* Elimina el espacio extra debajo de la imagen */
+      }
+      
+      /* Estilos para el texto */
+      .section-text {
+          text-align: center; /* Centra el texto horizontalmente */
+          margin-top: 20px; /* Añade espacio entre la imagen y el texto */
+      }
+      
+      /* Opcional: Estilos para el título */
+      .section-text h1 {
+          font-size: 3rem; /* Ajusta el tamaño del texto según sea necesario */
+          margin-bottom: 10px; /* Añade espacio debajo del título */
+      }
+      
+      /* Opcional: Estilos para el párrafo */
+      .section-text p {
+          font-size: 2rem; /* Ajusta el tamaño del texto según sea necesario */
+      }
+      
+      .section-dentistas {
+          margin-top: 100px;
+          padding:0 80px;
+          text-align: center; /* Centra el título y las cartas */
+      }
+      .section-dentistas h1 {
+          margin: 0 0 20px; /* Margen para el título */
+          font-size: 2rem; /* Tamaño del texto del título */
+          color: #333; /* Color del texto del título */
+      }
+      .cards-container {
+          display: flex;
+          gap: 20px; /* Espacio entre las cartas */
+          justify-content: center; /* Centra las cartas horizontalmente */
+      }
+      .card-dentista {
+          width: 250px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 15px;
+          box-sizing: border-box;
+          transition: transform 0.3s ease; /* Añade una transición suave para los efectos de hover */
+      }
+      .card-dentista  img {
+          width: 100%;
+          height: 280px;
+          object-fit: cover; /* Mantiene la imagen en proporción y cubre el área */
+      }
+      .card-dentista  h2 {
+          margin: 15px 0 5px;
+          font-size: 1.2rem; /* Tamaño del texto del nombre */
+      }
+      .card-dentista  p {
+          margin: 0;
+          font-size: 1rem; /* Tamaño del texto de la profesión */
+          color: #666;
+      }
+      
+      .section-info {
+          position: relative; /* Necesario para posicionar el pseudo-elemento */
+          margin-top: 100px;
+          height: 500px;
+          padding: 70px 170px;
+          overflow: hidden; /* Asegura que el pseudo-elemento no se desborde del contenedor */
+          z-index: 1; /* Asegura que el contenido esté sobre el pseudo-elemento */
+          
+      }
+      
+      .section-info::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 800PX;
+          background-image: url(../imagenes/turismo/equipodental.webp); /* Ruta de la imagen de fondo */
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          transform: rotateY(180deg); /* Rota horizontalmente la imagen de fondo */
+          transform-origin: center; /* Establece el origen de la rotación al centro */
+          z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
+          filter: blur(10px);
+      }
+      .section-info h2 {
+          margin: 0 0 20px; /* Margen para el título */
+          font-size: 2rem; /* Tamaño del texto del título */
+      }
+      
+      .section-info ul {
+         
+          padding: 2rem;
+      }
+      .section-info p {
+          margin: 0;
+          font-size: 1.1rem; /* Tamaño del texto */
+          line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+      }
+      .section-tratamientos {
+          margin-top: 100px;
+          padding: 40px 80px;
+          background-color: #F2F4F5; /* Fondo blanco para la sección de tratamientos */
+          text-align: center; /* Centra el contenido */
+      }
+      .section-tratamientos h2 {
+          margin: 0 0 40px;
+          font-size: 2.5rem;
+          color: #333; /* Color del título */
+      }
+      .tratamientos-container {
+          margin-left: 30px;
+          margin-right: 30px;
+          display: grid;
+          grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Repite las columnas según el ancho disponible */
+          gap: 40px; /* Espacio entre las tarjetas */
+          justify-content: center; /* Centra el contenedor de tarjetas */
+      }
+      .tratamiento-card {
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          overflow: hidden;
+          transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+          text-align: center;
+          padding: 15px;
+      }
+      .tratamiento-card img {
+          width: 100%;
+          height: 150px; /* Altura fija para las imágenes */
+          object-fit: cover; /* Mantiene la imagen en proporción */
+      }
+      .tratamiento-card h3 {
+          margin: 15px 0 10px;
+          font-size: 1.2rem; /* Tamaño del texto del nombre del tratamiento */
+          color: #333; /* Color del texto */
+      }
+      .tratamiento-card p {
+          margin: 0;
+          font-size: 1rem; /* Tamaño del texto de la descripción */
+          color: #666; /* Color del texto */
+      }
+      .tratamiento-card:hover {
+          transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+          box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Sombra más pronunciada en hover */
+      }
+      .policy-section {
+          text-align: justify;
+          margin-top: 100px;
+          padding: 20px;
+          background: #0c4179;
+      }
+      .policy-section h1,
+      .policy-section h2,p,ol {
+          color: #000000;
+      }
+      .policy-section h2 {
+          margin-top: 20px;
+      }
+      .policy-section h1 {
+      color: #05a6e1;
+      }
+      .policy-section p {
+          margin: 10px 0;
+          color: white;
+      }
+      .policy-section ol {
+          margin: 10px 0;
+          padding-left: 20px;
+      }
+      /* Responsive layout - makes a two column-layout instead of four columns */
+
+
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Ajustes para la portada */
+    .portada {
+        background-size: cover;
+    }
+
+    .texto-portada {
+        left: 5%; /* Distancia desde el borde izquierdo */
+        top: 10%; /* Distancia desde el borde superior */
+        width: 90%; /* Ajusta el ancho del contenedor */
+        padding: 15px; /* Ajusta el padding */
+    }
+
+    .texto-portada-info {
+        left: 5%; /* Distancia desde el borde izquierdo */
+        top: 10%; /* Distancia desde el borde superior */
+        width: 90%; /* Ajusta el ancho del contenedor */
+        padding: 10px;
+    }
+
+    .texto-portada p {
+        font-size: large; /* Ajusta el tamaño de la fuente */
+    }
+
+    .texto-portada h2 {
+        font-size: 1rem;
+        width: 290px;
+    }
+
+    .section-image img {
+        width: 80%; /* Ajusta el tamaño de la imagen */
+    }
+
+    .section-text h1 {
+        font-size: 2rem; /* Ajusta el tamaño del título */
+    }
+
+    .section-text p {
+        font-size: 1.5rem; /* Ajusta el tamaño del párrafo */
+    }
+
+    .info-cards {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .card-Especialidad {
+        width: 100%; /* Hace que las tarjetas ocupen todo el ancho del contenedor */
+    }
+
+    .card-img {
+        height: 150px; /* Ajusta la altura de la imagen */
+    }
+
+    .card-content {
+        height: auto; /* Ajusta la altura del contenido */
+    }
+
+    .full-width-section {
+              /* margin: 1px; */
+              padding: 2px;
+              margin-top: -15px;
+              width: 90%;
+              margin-left: 20px;
+              display: block;
+              text-align: center;
+    }
+    .services-section {
+        flex-direction: column; /* Coloca los elementos en una columna en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .service-item {
+        max-width: 100%; /* Asegura que los elementos ocupen el ancho completo del contenedor en móviles */
+        margin-bottom: 20px; /* Añade espacio inferior entre los elementos */
+    }
+
+    .service-item:last-child {
+        margin-bottom: 0; /* Elimina el margen inferior del último elemento */
+    }
+
+    .galery {
+        margin-top: 50px; /* Ajusta el margen superior */
+    }
+
+    .column {
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .header {
+        font-size: 1.5rem; /* Ajusta el tamaño del título */
+    }
+
+    .section-content {
+        max-width: 100%; /* Ajusta el ancho máximo del contenido */
+        margin-left: 10px;
+    }
+
+    .section-content h1 {
+        font-size: 1.5rem; /* Ajusta el tamaño del título */
+    }
+
+    .section-content p {
+        font-size: 1rem; /* Ajusta el tamaño del párrafo */
+    }
+
+    .section-dentistas h1 {
+        font-size: 1.5rem; /* Ajusta el tamaño del título */
+    }
+
+    .card-dentista {
+        width: 100%; /* Ajusta el ancho de las tarjetas */
+    }
+
+    .card-dentista img {
+        height: auto; /* Ajusta la altura de la imagen */
+    }
+
+    .section-info {
+        padding: 20px;
+        height: auto; /* Ajusta la altura */
+    }
+    .cards-container {
+        display: block;
+      
+    }
+    .section-info::before {
+        height: 600px; /* Ajusta la altura del pseudo-elemento para pantallas más pequeñas */
+        filter: blur(5px); /* Reduce el nivel de desenfoque para que el contenido sea más visible */
+    }
+    .full-width-section .ajusteIcon {
+        font-size: 5rem;
+      
+    }
+
+    .section-tratamientos h2 {
+        font-size: 2rem; /* Ajusta el tamaño del título */
+    }
+
+    .tratamientos-container {
+        grid-template-columns: repeat(1, 1fr); /* Ajusta el diseño de las columnas */
+    }
+
+    .tratamiento-card {
+        width: 100%; /* Ajusta el ancho de las tarjetas */
+    }
+
+    .policy-section h1 {
+        font-size: 1.5rem; /* Ajusta el tamaño del título */
+    }
+
+    .policy-section h2 {
+        font-size: 1.2rem; /* Ajusta el tamaño del título */
+    }
+
+    .policy-section p {
+        font-size: 0.9rem; /* Ajusta el tamaño del párrafo */
+    }
+
+    .policy-section ol {
+        padding-left: 10px; /* Ajusta el padding */
+    }
+}
+   
