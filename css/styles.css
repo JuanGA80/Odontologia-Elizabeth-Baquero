@@ -71,8 +71,8 @@ header {
   position: absolute;
   content: "";
   background: #fff;
-  width: 50px;
-  height: 5px;
+  width: 34px;
+  height: 4px;
   top: 0;
   border-radius: 5px;
   -webkit-transition: all 400ms ease;
@@ -1209,7 +1209,7 @@ footer {
     font-size: 22px;
   }
   .logo_nav a img {
-    max-width: 80%;
+    max-width: 49%;
   }
 
   .tarjetas p {
@@ -1311,7 +1311,7 @@ footer {
   }
 
   .logo_nav {
-    width: 50%;
+    width: 44%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

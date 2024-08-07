@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
     body{
         background-color: #F2F4F5;
          
@@ -12,19 +12,37 @@
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
-         
           overflow: hidden;
       }
       .portada img {
           background-size: cover;
           width: 100%;
       }
-      
+      .portadaMobil {
+        display: none;
+    }
+    
+    /* Mostrar la imagen de la portada para escritorio por defecto */
+    .portadadesktop {
+        display: block;
+    }
+     
+     
+        .foreground-image {
+            position: absolute;
+            top: 0; /* Ajusta la posición vertical según sea necesario */
+            left: 42px; /* Ajusta la posición horizontal según sea necesario */
+            width: 30%; /* Ajusta el tamaño según sea necesario */
+            height: auto; /* Mantiene la proporción de la imagen */
+          }
+    
+      .hidden {
+       display: none;
+      }
       .texto-portada {
-          background-color: rgba(128, 128, 128, 0.8); 
           position: absolute;
-          left: 15%; /* Distancia desde el borde derecho */
-          top: 20%; /* Distancia desde el borde superior */
+          left: 73%;
+          top: 71%;
           color: rgb(0 45 137);
           padding: 25px;
           border-radius: 5px;
@@ -50,7 +68,7 @@
       .texto-portada h2,
       .texto-portada p {
           color: rgb(226, 242, 0);;
-          width: 450px;
+          width: 600px;
           margin: 0;
       }
       .btn-info {
@@ -93,7 +111,7 @@
           padding: 10px 20px;
           font-size: 14px;
           color: #fff;
-          background-color: #007bff;
+          background-color: rgba(0, 123, 255, 0.8);
           border: none;
           border-radius: 4px;
           text-align: center;
@@ -163,7 +181,7 @@
           margin: 0 0 10px; /* Espaciado inferior */
       }
       .tratamientos-container .tratamiento-card img{
-          width: 74%;
+          width: 100%;
       }
       /* Texto descriptivo de la tarjeta */
       .card-text {
@@ -222,7 +240,7 @@
     .galery{
         padding: 20px;
         background-color: white;
-        margin-top: 100px;
+        margin-top: 50px;
       }
     
       .row {
@@ -618,53 +636,169 @@ font-size: x-small;
           margin: 0;
           font-size: 1.1rem; /* Tamaño del texto */
           line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+      }/* Estilo general para la sección de tratamientos */
+.section-tratamientos {
+    padding: 75px;
+    text-align: center;
+}
+.section-tratamientos h2 {
+   font-size: 3rem;
+}
+
+.tratamientos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.tratamiento-card {
+    position: relative;
+    background: #fff; /* Fondo blanco para el texto */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+    height: 200px; /* Ajustar altura según sea necesario */
+}
+
+.tratamiento-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%); /* Reduce el brillo de la imagen */
+    transition: filter 0.3s;
+}
+
+.tratamiento-card h3 {
+    position: relative;
+    z-index: 1;
+    color: #fff; /* Color del texto sobre la imagen */
+    font-size: 18px;
+    margin: 0;
+    padding: 20px;
+    margin-top: 60px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para legibilidad */
+}
+
+.tratamiento-card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la tarjeta */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tratamiento-card:hover img {
+    filter: brightness(70%); /* Aumenta el brillo de la imagen en hover */
+}
+
+      .section-comentarios {
+        margin-top: 100px;
+        margin-left:98px;
+        width: 87%;
+        max-width: 1200px;
       }
-      .section-tratamientos {
-          margin-top: 100px;
-          padding: 40px 80px;
-          background-color: #F2F4F5; /* Fondo blanco para la sección de tratamientos */
-          text-align: center; /* Centra el contenido */
+      
+      .comentarios {
+        display: flex;
+        align-items: center;
+        position: relative;
       }
-      .section-tratamientos h2 {
-          margin: 0 0 40px;
-          font-size: 2.5rem;
-          color: #333; /* Color del título */
+      
+      .review-container {
+        flex: 1;
+        overflow: hidden;
       }
-      .tratamientos-container {
-          margin-left: 30px;
-          margin-right: 30px;
-          display: grid;
-          grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Repite las columnas según el ancho disponible */
-          gap: 40px; /* Espacio entre las tarjetas */
-          justify-content: center; /* Centra el contenedor de tarjetas */
+      
+      .reviews {
+        display: flex;
+        transition: transform 0.5s ease;
       }
-      .tratamiento-card {
-          background-color: #fff;
-          border-radius: 8px;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-          overflow: hidden;
-          transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
-          text-align: center;
-          padding: 15px;
+      
+      .review {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 900px; /* Ajusta el ancho máximo según sea necesario */
+        box-sizing: border-box;
+        padding: 20px;
       }
-      .tratamiento-card img {
-          width: 100%;
-          height: 150px; /* Altura fija para las imágenes */
-          object-fit: cover; /* Mantiene la imagen en proporción */
+      
+      .review-text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
-      .tratamiento-card h3 {
-          margin: 15px 0 10px;
-          font-size: 1.2rem; /* Tamaño del texto del nombre del tratamiento */
-          color: #333; /* Color del texto */
+      
+      .review-header {
+        margin-bottom: 10px;
       }
-      .tratamiento-card p {
-          margin: 0;
-          font-size: 1rem; /* Tamaño del texto de la descripción */
-          color: #666; /* Color del texto */
+      
+      .review-header h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2em;
+        margin: 0 0 10px;
       }
-      .tratamiento-card:hover {
-          transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
-          box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Sombra más pronunciada en hover */
+      
+      .review-header h2 {
+        margin: 0 0 10px;
+        font-size: 1.5em;
+        color: #333;
+      }
+      
+      .stars-container {
+        display: flex;
+        gap: 5px;
+      }
+      
+      .stars-container img {
+        width: 24px;
+        height: 24px;
+      }
+      
+      p {
+        margin: 0 0 10px;
+        font-size: 1em;
+        color: #666;
+      }
+      
+      .google img {
+        width: 40px; /* Ajusta el tamaño según sea necesario */
+      }
+      
+      .img-review {
+        margin-left: 20px;
+      }
+      
+      .img-review img {
+        max-width: 300px; /* Ajusta el tamaño máximo de la imagen según sea necesario */
+        height: auto;
+        border-radius: 8px;
+      }
+      
+      .arrow {
+        border-radius: 2rem;
+        background: #bcb3b3;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        z-index: 1;
+      }
+      
+      .arrow-left {
+        position: absolute;
+        left: -12px;
+      }
+      
+      .arrow-right {
+        position: absolute;
+        right: -12px;
       }
       .policy-section {
           text-align: justify;
@@ -691,8 +825,12 @@ font-size: x-small;
           padding-left: 20px;
       }
       /* Responsive layout - makes a two column-layout instead of four columns */
-
-
+      .toggle-button {
+        display: none;
+    }
+    .img_mobil2{
+        height: 405px;
+     }
 
 
 /* Estilos para dispositivos móviles */
@@ -700,6 +838,13 @@ font-size: x-small;
     /* Ajustes para la portada */
     .portada {
         background-size: cover;
+    }
+    .portadadesktop {
+        display: none; /* Oculta la imagen de portada de escritorio en móviles */
+    }
+
+    .portadaMobil {
+        display: block; /* Muestra la imagen de portada móvil en pantallas pequeñas */
     }
 
     .texto-portada {
@@ -715,6 +860,10 @@ font-size: x-small;
         width: 90%; /* Ajusta el ancho del contenedor */
         padding: 10px;
     }
+    .btn-info {
+        margin-top: 504px;
+        margin-left: 90px;
+    }
 
     .texto-portada p {
         font-size: large; /* Ajusta el tamaño de la fuente */
@@ -722,7 +871,7 @@ font-size: x-small;
 
     .texto-portada h2 {
         font-size: 1rem;
-        width: 290px;
+        width: 180px;
     }
 
     .section-image img {
@@ -757,7 +906,7 @@ font-size: x-small;
     .full-width-section {
               /* margin: 1px; */
               padding: 2px;
-              margin-top: -15px;
+              margin-top: -82px;
               width: 90%;
               margin-left: 20px;
               display: block;
@@ -778,9 +927,34 @@ font-size: x-small;
     .service-item:last-child {
         margin-bottom: 0; /* Elimina el margen inferior del último elemento */
     }
+    #contentFull {
+        display: none;
+    }
+    
+    #contentShort {
+        display: block;
+    }
+
+    .toggle-button {
+        display: grid;
+        margin-left: 115px;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .img_mobil{
+       height: 164px;
+    }
+    .img_mobil2{
+        height: 277px;
+     }
 
     .galery {
-        margin-top: 50px; /* Ajusta el margen superior */
+        margin-top: 10px; /* Ajusta el margen superior */
     }
 
     .column {
@@ -832,7 +1006,7 @@ font-size: x-small;
         filter: blur(5px); /* Reduce el nivel de desenfoque para que el contenido sea más visible */
     }
     .full-width-section .ajusteIcon {
-        font-size: 5rem;
+      display: none;
       
     }
 
@@ -864,7 +1038,7 @@ font-size: x-small;
         padding-left: 10px; /* Ajusta el padding */
     }
     .section-tratamientos {
-        margin-top: 100px;
+        margin-top: 10px;
         padding: 40px 10px;
         background-color: #F2F4F5;
         text-align: center;
@@ -880,8 +1054,120 @@ font-size: x-small;
         padding: 1rem;
        
     }
+    .section-dentistas {
+      
+        padding: 0 60px;
+        
+    }
+    .tratamientos-container .tratamiento-card img {
+        width: 100%;
+    }
     /* Estilos generales para pantallas móviles */
-
+    .section-comentarios {
+        margin-top: 50px; /* Ajusta el margen superior para pantallas más pequeñas */
+        margin-left:  -1px;; /* Ajusta el margen izquierdo */
+        width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+        max-width: none; /* Remueve el ancho máximo para pantallas pequeñas */
+        display: none;
+    }
+    
+    .comentarios {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 0 10px; /* Añade algo de padding a los lados */
+    }
+    
+    .review-container {
+        flex: 1;
+        overflow: hidden;
+    }
+    
+    .reviews {
+        display: flex;
+        flex-direction: column; /* Cambia a columna para dispositivos móviles */
+        transition: transform 0.5s ease;
+    }
+    
+    .review {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: none; /* Remueve el ancho máximo para pantallas más pequeñas */
+        box-sizing: border-box;
+        padding: 10px; /* Ajusta el padding para pantallas más pequeñas */
+        margin-bottom: 20px; /* Añade margen inferior entre las reseñas */
+    }
+    
+    .review-text {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .review-header h1 {
+        font-size: 1.5em; /* Ajusta el tamaño de fuente */
+        margin: 0 0 5px;
+    }
+    
+    .review-header h2 {
+        font-size: 1.2em; /* Ajusta el tamaño de fuente */
+        color: #333;
+        margin: 0 0 5px;
+    }
+    
+    .stars-container {
+        display: flex;
+        justify-content: center;
+        gap: 3px; /* Ajusta el espacio entre estrellas */
+    }
+    
+    .stars-container img {
+        width: 20px; /* Ajusta el tamaño de las estrellas */
+        height: 20px;
+    }
+    
+    p {
+        font-size: 0.9em; /* Ajusta el tamaño de fuente del párrafo */
+    }
+    
+    .google img {
+        width: 30px; /* Ajusta el tamaño del logo de Google */
+    }
+    
+    .img-review {
+        margin-top: 10px; /* Añade margen superior para separar la imagen del texto */
+        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+        display: flex;
+        justify-content: center; /* Centra la imagen */
+    }
+    
+    .img-review img {
+        max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .arrow {
+        border-radius: 50%; /* Cambia la forma de los botones de flecha */
+        background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 24px; /* Ajusta el tamaño de la fuente */
+        z-index: 1;
+    }
+    
+    .arrow-left {
+        position: absolute;
+        left: 10px; /* Ajusta la posición del botón de flecha izquierda */
+    }
+    
+    .arrow-right {
+        position: absolute;
+        right: 10px; /* Ajusta la posición del botón de flecha derecha */
+    }
     .travel-card {
         max-width: 100%;
         margin: 10px;
