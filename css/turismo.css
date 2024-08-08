@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
     body{
         background-color: #F2F4F5;
          
@@ -240,7 +241,7 @@
     .galery{
         padding: 20px;
         background-color: white;
-        margin-top: 50px;
+        margin-top: 0;
       }
     
       .row {
@@ -263,7 +264,16 @@
           margin-top: 8px;
           vertical-align: middle;
           width: 100%;
+          object-fit: cover;
           transition: transform 0.5s ease; /* Transición suave para el efecto de zoom */
+        }
+        .correcion{
+            height: 32%;
+            object-fit: cover;
+        }
+        .correcion2{
+            height: 52%;
+            object-fit: cover;
         }
         .column img:hover {
           transform: scale(1.3); /* Amplía la imagen al 110% */
@@ -278,7 +288,6 @@
         .header-footer {
             padding: 6rem;
             text-align: center;
-            margin: 0 0 40px;
             font-size: 1.5rem;
             color: #000000; /* Color del título */
           }
@@ -287,7 +296,7 @@
             position: relative; /* Necesario para el desplazamiento absoluto */
             width: 100%; /* Ocupa el ancho completo del contenedor */
             padding: 20px 0; /* Espacio arriba y abajo */
-            background-color: #F2F4F5; /* Color de fondo opcional */
+            background-color: #ffffff; /* Color de fondo opcional */
         }
         
         .carousel {
@@ -553,6 +562,67 @@ font-size: x-small;
       .section-text p {
           font-size: 2rem; /* Ajusta el tamaño del texto según sea necesario */
       }
+      /* Estilos para la sección */
+.Agenda {
+    margin-top: 100px;
+    text-align: justify; /* Centra el título */
+    padding: 30px;
+    /* Degradado lineal de #009ec0 a un tono más claro de azul */
+    /* background: linear-gradient(to bottom, #009ec0, #66c2e8, #f2f4f5); */
+    background: linear-gradient(to bottom, #009ec0, #66c2e8 60%, #d0d8da 100%);
+
+    color: white;
+
+}
+
+/* Estilos para el contenedor de las tarjetas */
+.Card-agenda {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos en línea */
+    flex-wrap: wrap; /* Ajusta los elementos en pantallas más pequeñas */
+    gap: 20px; /* Espacio entre los elementos */
+   
+}
+
+/* Estilos para cada tarjeta */
+.infocitas {
+    flex: 1 1 30%; /* Las tarjetas ocupan aproximadamente el 30% del ancho */
+    padding: 50px;
+ 
+}
+.infocitas h2 {
+    position: relative; /* Para asegurar que la línea se posicione correctamente */
+    margin-top: 30px; /* Espacio para la línea */
+    padding-top: 10px; /* Espacio entre el texto y la línea */
+    border-top: 2px solid #ffff00; /* La línea */
+}
+
+
+/* Estilos para los encabezados y listas */
+.Agenda h1 {
+    text-align: center;
+    padding: 30px;
+    font-size:2rem;
+    font-family: wfont_0d9a8c_669b17dd29a74f0d89400789759b7b28, wf_669b17dd29a74f0d894007897, orig_source_serif_pro_semibold;
+    padding-bottom: 0;
+}
+
+h2 {
+    font-family: wfont_0d9a8c_669b17dd29a74f0d89400789759b7b28, wf_669b17dd29a74f0d894007897, orig_source_serif_pro_semibold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+ul {
+    line-height: 2;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    
+}
+
       
       .section-dentistas {
           margin-top: 100px;
@@ -596,47 +666,50 @@ font-size: x-small;
           font-size: 1rem; /* Tamaño del texto de la profesión */
           color: #666;
       }
-      
+
       .section-info {
-          position: relative; /* Necesario para posicionar el pseudo-elemento */
-          margin-top: 100px;
-          height: 500px;
-          padding: 70px 170px;
-          overflow: hidden; /* Asegura que el pseudo-elemento no se desborde del contenedor */
-          z-index: 1; /* Asegura que el contenido esté sobre el pseudo-elemento */
-          
-      }
-      
-      .section-info::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 800PX;
-          background-image: url(../imagenes/turismo/equipodental.webp); /* Ruta de la imagen de fondo */
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center;
-          transform: rotateY(180deg); /* Rota horizontalmente la imagen de fondo */
-          transform-origin: center; /* Establece el origen de la rotación al centro */
-          z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
-          filter: blur(10px);
-      }
-      .section-info h2 {
-          margin: 0 0 20px; /* Margen para el título */
-          font-size: 2rem; /* Tamaño del texto del título */
-      }
-      
-      .section-info ul {
-         
-          padding: 2rem;
-      }
-      .section-info p {
-          margin: 0;
-          font-size: 1.1rem; /* Tamaño del texto */
-          line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
-      }/* Estilo general para la sección de tratamientos */
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to bottom, #c0daf2, #f2f4f5);
+
+
+        padding: 30px;
+        
+    }
+    
+    .section-info img {
+        width: 31%; /* Ocupa la mitad del ancho del contenedor */
+        object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+        border-radius: 15px;
+    }
+    
+    .section-info .text {
+        width: 50%; /* Ocupa la otra mitad del ancho del contenedor */
+        padding: 0 20px; /* Espacio entre la imagen y el texto */
+    }
+    
+    .section-info h2 {
+        margin: 0;
+        padding: 10px 0; /* Espaciado interno para separar los elementos */
+    }
+    .section-info p{
+        margin: 0;
+        padding: 10px 0; /* Espaciado interno para separar los elementos */
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        text-align: justify;
+    }
+    
+    .section-info ul {
+        list-style-type: disc;
+        margin: 10px 0;
+        padding-left: 20px; /* Espacio para las viñetas de la lista */
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+    
 .section-tratamientos {
     padding: 75px;
     text-align: center;
@@ -828,11 +901,8 @@ font-size: x-small;
       .toggle-button {
         display: none;
     }
-    .img_mobil2{
-        height: 405px;
-     }
-
-
+    
+    
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     /* Ajustes para la portada */
@@ -861,8 +931,9 @@ font-size: x-small;
         padding: 10px;
     }
     .btn-info {
-        margin-top: 504px;
-        margin-left: 90px;
+        margin-top: 472px;
+        margin-left: 72px;
+
     }
 
     .texto-portada p {
@@ -937,7 +1008,7 @@ font-size: x-small;
 
     .toggle-button {
         display: grid;
-        margin-left: 115px;
+        margin-left: 96px;
         margin-top: 10px;
         padding: 10px;
         background-color: #007bff;
@@ -954,7 +1025,7 @@ font-size: x-small;
      }
 
     .galery {
-        margin-top: 10px; /* Ajusta el margen superior */
+        margin-top: -40px;; /* Ajusta el margen superior */
     }
 
     .column {
@@ -1243,6 +1314,41 @@ font-size: x-small;
         padding: 8px 16px;
         font-size: 14px;
     }
+    .Agenda{
+       margin-top: 0;
+    }
+    .infocitas {
+        padding: 40px;
+       padding-top: 0;
+       padding-bottom: 0;
+    }
+    
+    
+    .section-info {
+        flex-direction: column; /* Coloca los elementos en columna en lugar de fila */
+        align-items: flex-start; /* Alinea los elementos al principio */
+        padding: 20px; /* Ajusta el relleno para pantallas más pequeñas */
+    }
+    .section-info h2,h3{
+      text-align: center;
+    }
+
+    .section-info img {
+        width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+        margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+        height: 432px;
+    }
+
+    .section-info .text {
+        width: 100%; /* El texto ocupa todo el ancho del contenedor */
+        padding: 0; /* Elimina el espacio adicional entre la imagen y el texto */
+    }
 
 }
+
+
+  
+ 
+    
+  
    
