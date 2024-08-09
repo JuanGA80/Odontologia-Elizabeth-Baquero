@@ -331,87 +331,141 @@
             }
         }
         /* Contenedor principal de la tarjeta */
-/* Estilo general para la tarjeta */
-.travel-card {
-    max-width: 1200px;
-    margin: 20px auto;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    padding: 20px;
-}
-
-.travel-card h3 {
-    margin: 0;
-    font-size: 28px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.travel-card-content {
-    display: flex;
-    align-items: flex-start; /* Alinea los elementos en el inicio */
-    justify-content: space-between;
-}
-
-/* Imagen del destino */
-.travel-card-image {
-    width: 400px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.travel-card-text {
-    flex: 1;
-    padding: 20px;
-}
-.title-container {
-    display: flex;
-    align-items: center; /* Alinea el icono y el título verticalmente */
-    margin-bottom: 10px; /* Espacio debajo del título */
-}
-
-.title-icon {
-    width: 24px; /* Tamaño del icono */
-    height: auto;
-    margin-right: 10px; /* Espacio entre el icono y el título */
-}
-.travel-card-text h2 {
-    margin-top: 0;
-    font-size: 24px;
-    color: #333;
-}
-
-.travel-card-text p {
-    margin: 10px 0;
-    color: #555;
-    line-height: 1.6;
-}
-
-.travel-card-details p {
-    margin: 5px 0;
-    color: #777;
-}
-.Precios {
-    margin-top: 20px;
-}
-
-.Precios div {
-    margin-bottom: 10px;
-}
-
-.precio-normal,
-.detalle-incluye,
-.precio-final,
-.precio-final-2personas,
-.incluye {
-    font-size: 16px;
-    color: #333;
-}
+        .travel-card {
+            max-width: 1200px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .travel-card h3 {
+            margin: 0;
+            font-size: 50px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+        
+        .travel-card-content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        
+        .travel-card-image-container {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .travel-card-image {
+            width: 400px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        
+        .travel-card-details {
+            margin-top: 20px;
+        }
+        
+        .grid-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .grid-list li {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .travel-card-text {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .title-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .title-icon {
+            width: 24px;
+            height: auto;
+            margin-right: 10px;
+        }
+        
+        .travel-card-text h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        
+        .travel-card-text p {
+            margin: 10px 0;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .travel-card-pricing {
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            background-color: #00bcd4;
+            text-align: center;
+            height: 350px;
+            border-bottom-left-radius:50px ;
+        }
+        
+        .travel-card-pricing div {
+            margin-bottom: 10px;
+        }
+        
+        .precio-normal,
+        .detalle-incluye,
+        .precio-final,
+        .precio-final-2personas,
+        .incluye {
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .condiciones {
+            list-style-type: disc; /* Tipo de marcador de lista */
+            margin: 0; /* Quitar margen externo */
+            padding: 0; /* Quitar padding interno */
+            padding-left: 20px; /* Añadir padding a la izquierda para los marcadores */
+            border-radius: 5px; /* Esquinas redondeadas */
+            padding: 15px; /* Espaciado interno para la lista */
+            font-size: x-small; /* Tamaño de fuente */
+            color: #333; /* Color del texto */
+        }
+        
+        .condiciones li {
+            margin-bottom: 10px; /* Espacio entre elementos de la lista */
+            line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+        }
+        
+        .condiciones li:last-child {
+            margin-bottom: 0; /* Eliminar margen inferior en el último elemento */
+        }
+        
+        
+        
+       
+          
 
 /* Estilos para el botón primario */
 .btn-primary {
@@ -569,7 +623,7 @@ font-size: x-small;
     padding: 30px;
     /* Degradado lineal de #009ec0 a un tono más claro de azul */
     /* background: linear-gradient(to bottom, #009ec0, #66c2e8, #f2f4f5); */
-    background: linear-gradient(to bottom, #009ec0, #66c2e8 60%, #d0d8da 100%);
+    background: linear-gradient(to bottom, #009ec0, #66c2e8 60%, #009ec0 100%);
 
     color: white;
 
@@ -623,52 +677,7 @@ li {
     
 }
 
-      
-      .section-dentistas {
-          margin-top: 100px;
-          padding:0 80px;
-          text-align: center; /* Centra el título y las cartas */
-      }
-      .section-dentistas h1 {
-          margin: 0 0 20px; /* Margen para el título */
-          font-size: 2rem; /* Tamaño del texto del título */
-          color: #333; /* Color del texto del título */
-      }
-      .cards-container {
-          display: flex;
-          gap: 20px; /* Espacio entre las cartas */
-          justify-content: center; /* Centra las cartas horizontalmente */
-      }
-      .card-dentista {
-          width: 250px;
-          background-color: #fff;
-          border-radius: 8px;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 15px;
-          box-sizing: border-box;
-          transition: transform 0.3s ease; /* Añade una transición suave para los efectos de hover */
-      }
-      .card-dentista  img {
-          width: 100%;
-          height: 280px;
-          object-fit: cover; /* Mantiene la imagen en proporción y cubre el área */
-      }
-      .card-dentista  h2 {
-          margin: 15px 0 5px;
-          font-size: 1.2rem; /* Tamaño del texto del nombre */
-      }
-      .card-dentista  p {
-          margin: 0;
-          font-size: 1rem; /* Tamaño del texto de la profesión */
-          color: #666;
-      }
-
       .section-info {
-        margin-top: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -678,7 +687,22 @@ li {
         padding: 30px;
         
     }
-    
+    .rating2{
+        display: block;
+    }
+    .rating2 i {
+        color: #feee00;
+    }
+    .card_nosotros::before {
+        content: " ";
+        position: absolute;
+        height: 45%;
+        width: 100%;
+        background-color: #f8f4f7;
+        top: 0;
+        left: 0;
+        border-radius: 20px 20px 0 0;
+    }
     .section-info img {
         width: 31%; /* Ocupa la mitad del ancho del contenedor */
         object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
@@ -897,11 +921,38 @@ li {
           margin: 10px 0;
           padding-left: 20px;
       }
+      #info{
+        display: block;
+       
+      }
+      #info2{
+          display: none;
+         
+        }
       /* Responsive layout - makes a two column-layout instead of four columns */
       .toggle-button {
         display: none;
     }
-    
+    .comentarios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c2daf2;
+    }
+    .comentarios h2{
+        display: block;
+        width: 85%;
+        margin-top: 55px;
+        color: #000000;
+        padding: 10px 0px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+  
     
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
@@ -1190,7 +1241,13 @@ li {
     .stars-container {
         display: flex;
         justify-content: center;
+        margin: 0;
+        width: 37%;
         gap: 3px; /* Ajusta el espacio entre estrellas */
+    }
+    .icon-wrapper img{
+        margin-right: 7px;
+        margin-left: -1px;
     }
     
     .stars-container img {
@@ -1284,10 +1341,18 @@ li {
         margin: 8px 0;
         font-size: 14px;
     }
-
+    .hidden{
+        display: block;
+        background-color: #01bcd5;
+        margin-left: 30%;
+        color: white;
+        border: none;
+       
+    }
     .travel-card-details p {
         margin: 4px 0;
-        font-size: 12px;
+        font-size: 16px;
+        color: black;
     }
 
     .Precios {
@@ -1343,7 +1408,82 @@ li {
         width: 100%; /* El texto ocupa todo el ancho del contenedor */
         padding: 0; /* Elimina el espacio adicional entre la imagen y el texto */
     }
-
+    .travel-card {
+        max-width: 100%; /* Hacer que la tarjeta ocupe el 100% del ancho disponible */
+        margin: 10px; /* Reducir el margen en pantallas pequeñas */
+        padding: 10px; /* Reducir el padding general */
+        flex-direction: column; /* Asegurar que la tarjeta sea de columna en móviles */
+        box-shadow: none; /* Opcional: Eliminar sombra en pantallas pequeñas */
+    }
+    
+    .travel-card h3 {
+        font-size: 32px; /* Reducir el tamaño de fuente del título */
+        margin-top: 20px; /* Reducir el margen superior */
+        margin-bottom: 10px; /* Reducir el margen inferior */
+    }
+    
+    .travel-card-content {
+        flex-direction: column; /* Cambiar a columna para el contenido en móviles */
+        align-items: center; /* Centrar los elementos */
+        padding: 10px; /* Reducir el padding */
+    }
+    
+    .travel-card-image-container {
+        width: 100%; /* Hacer que el contenedor de la imagen ocupe el 100% del ancho */
+        display: flex;
+        justify-content: center; /* Centrar la imagen en el contenedor */
+        margin-bottom: 10px; /* Añadir espacio debajo de la imagen */
+    }
+    
+    .travel-card-image {
+        width: 100%; /* Hacer que la imagen ocupe el 100% del ancho del contenedor */
+        max-width: 100%; /* Asegurarse de que no se expanda más allá de su contenedor */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+    
+    .travel-card-details {
+        margin-top: 10px; /* Reducir el margen superior */
+    }
+    
+    .grid-list {
+        grid-template-columns: 1fr; /* Hacer que los elementos se dispongan en una sola columna */
+        gap: 5px; /* Reducir el espacio entre elementos */
+    }
+    
+    .grid-list li {
+        font-size: small; /* Reducir el tamaño de fuente en móviles */
+        padding: 8px; /* Reducir el padding */
+    }
+    
+    .travel-card-text {
+        padding: 10px; /* Reducir el padding interno */
+    }
+    
+    .travel-card-pricing {
+        height: auto; /* Ajustar la altura automáticamente */
+        padding: 15px; /* Reducir el padding */
+        border-bottom-left-radius: 20px; /* Ajustar el radio de la esquina inferior izquierda */
+    }
+    
+    .travel-card-pricing div {
+        font-size: 14px; /* Reducir el tamaño de fuente */
+        margin-bottom: 8px; /* Reducir el margen inferior */
+    }
+    
+    .btn-primary {
+        width: 100%; /* Hacer que el botón ocupe todo el ancho disponible */
+        padding: 12px; /* Ajustar el padding */
+        font-size: 18px; /* Aumentar ligeramente el tamaño de la fuente */
+        margin-top: 15px; /* Añadir espacio superior */
+    }
+    #info{
+      display: none;
+     
+    }
+    #info2{
+        display: none;
+       
+      }
 }
 
 
