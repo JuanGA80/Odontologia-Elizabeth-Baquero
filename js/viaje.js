@@ -1,5 +1,19 @@
-const info=document.getElementById("info");
-const btnViaje=document.getElementById("btnViaje1");
-btnViaje.addEventListener("click",()=>{ 
-    info.classList.toggle("aparecer")
-})
+const modal = document.getElementById("modalV");
+const cerrar = document.getElementById("close1");
+const show = document.getElementById("More");
+
+show.addEventListener("click", function()
+    {
+        modal.classList.add("openmodal");
+       
+    }
+
+)
+cerrar.addEventListener("click", function()
+    {
+        modal.classList.remove("openmodal");
+       
+    }
+
+)
+

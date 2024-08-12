@@ -339,8 +339,8 @@
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             background-color: #fff;
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            
         }
         
         .travel-card h3 {
@@ -353,20 +353,21 @@
         }
         
         .travel-card-content {
-            display: flex;
+            display: grid;
             align-items: flex-start;
             justify-content: space-between;
-            padding: 20px;
+            padding: 97px;
         }
         
         .travel-card-image-container {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+
         }
         
         .travel-card-image {
-            width: 400px;
-            height: auto;
+            width: 100%;
+            height: 52%;
             object-fit: cover;
             border-radius: 5px;
         }
@@ -377,7 +378,7 @@
         
         .grid-list {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 10px;
             list-style: none;
             padding: 0;
@@ -421,12 +422,15 @@
         }
         
         .travel-card-pricing {
-            padding: 20px;
+            padding: 50px;
+            /* color: white; */
             border-top: 1px solid #ddd;
             background-color: #00bcd4;
             text-align: center;
+            justify-self: unset;
             height: 350px;
-            border-bottom-left-radius:50px ;
+            display: grid;
+            border-bottom-left-radius: 50px;
         }
         
         .travel-card-pricing div {
@@ -439,7 +443,7 @@
         .precio-final-2personas,
         .incluye {
             font-size: 16px;
-            color: #333;
+            color: #fff;
         }
         
         .condiciones {
@@ -499,6 +503,7 @@
 .precio-normal{
     font-size: 25px;
     font-weight: bold;
+    color: yellow;
 }
 .precio-final-2personas{
     font-size: small;
@@ -952,7 +957,11 @@ li {
         font-size: 30px;
         border-radius: 10px;
     }
-  
+  .modalV
+  {
+    display: none;
+   
+}
     
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
@@ -1242,8 +1251,17 @@ li {
         display: flex;
         justify-content: center;
         margin: 0;
-        width: 37%;
+        
         gap: 3px; /* Ajusta el espacio entre estrellas */
+    }
+    .icon-wrapper{
+       margin-top: 5px;
+    }
+    .icons-container{
+        display: grid;
+        justify-content: center;
+        /* align-items: normal; */
+        margin-bottom: 10px;
     }
     .icon-wrapper img{
         margin-right: 7px;
@@ -1309,19 +1327,39 @@ li {
     }
 
     .travel-card-content {
-        flex-direction: column; /* Pone el contenido en una columna */
-        align-items: center; /* Centra el contenido */
-        text-align: center;
-    }
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        grid-template-areas:
+          "image"
+          "text"
+          "pricing";
+        gap: 10px; /* Menor espacio entre elementos en pantallas pequeñas */
+      }
+    
+      .travel-card-image-container {
+        margin-bottom: 10px; /* Espacio debajo de la imagen */
+      }
+    
+      .travel-card-pricing {
+        margin-top: 10px; /* Espacio entre el contenido del texto y los precios en pantallas pequeñas */
+      }
+    
+      .travel-card-text {
+        display: none;
+        padding: 1px; /* Añade un poco de padding en pantallas pequeñas */
+      }
+    
+      .travel-card-image {
+        width: 100%; /* Asegúrate de que la imagen no se desborde */
+      }
+    
+    
 
     .travel-card-image {
         width: 100%; /* Ajusta la imagen para que ocupe el ancho completo */
         height: auto;
     }
 
-    .travel-card-text {
-        padding: 15px;
-    }
+   
 
     .title-container {
         justify-content: center; /* Centra el icono y el título */
@@ -1344,7 +1382,7 @@ li {
     .hidden{
         display: block;
         background-color: #01bcd5;
-        margin-left: 30%;
+        margin-left: 3%;
         color: white;
         border: none;
        
@@ -1353,6 +1391,7 @@ li {
         margin: 4px 0;
         font-size: 16px;
         color: black;
+        margin-left: 6px;
     }
 
     .Precios {
@@ -1446,18 +1485,27 @@ li {
     }
     
     .grid-list {
-        grid-template-columns: 1fr; /* Hacer que los elementos se dispongan en una sola columna */
+        grid-template-columns:  repeat(3,1fr); /* Hacer que los elementos se dispongan en una sola columna */
         gap: 5px; /* Reducir el espacio entre elementos */
     }
     
     .grid-list li {
         font-size: small; /* Reducir el tamaño de fuente en móviles */
         padding: 8px; /* Reducir el padding */
+        text-align: center;
+    }
+    .line-vertical{
+        display: none;
+    }
+    #close1{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: white;
+        font-size: 25px;
     }
     
-    .travel-card-text {
-        padding: 10px; /* Reducir el padding interno */
-    }
+  
     
     .travel-card-pricing {
         height: auto; /* Ajustar la altura automáticamente */
@@ -1484,6 +1532,37 @@ li {
         display: none;
        
       }
+    .modalV {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5) ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        overflow: auto;
+        transform: scale(0);
+        transition: 0.3s ease-in;
+       
+      }
+      .openmodal{
+        transform: scale(1);
+       transition: 0.3s ease-in;
+      }
+      .container-modalV{
+        background-color: #00bcd4;
+        width: 80%;
+        padding: 20px;
+        height: 90%;
+        overflow-y: auto;
+       
+      }
+      /* estilos para seccion de detalles */
+   
+     
 }
 
 
