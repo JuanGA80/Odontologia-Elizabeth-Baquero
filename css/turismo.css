@@ -357,6 +357,7 @@
             align-items: flex-start;
             justify-content: space-between;
             padding: 97px;
+            padding-top: 0;
         }
         
         .travel-card-image-container {
@@ -613,13 +614,90 @@ font-size: x-small;
       
       /* Opcional: Estilos para el título */
       .section-text h1 {
-          font-size: 3rem; /* Ajusta el tamaño del texto según sea necesario */
+          font-size: 2rem; /* Ajusta el tamaño del texto según sea necesario */
           margin-bottom: 10px; /* Añade espacio debajo del título */
       }
       
       /* Opcional: Estilos para el párrafo */
       .section-text p {
-          font-size: 2rem; /* Ajusta el tamaño del texto según sea necesario */
+          font-size: 1.5rem; /* Ajusta el tamaño del texto según sea necesario */
+      }
+
+      /* seccion de smile */
+      .section-smile{
+        padding: 42px;
+      }
+      .section-smile h2 {
+        font-size: xxx-large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .smile-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+        gap: 20px; /* Espacio entre las columnas */
+        justify-content: center; /* Centra el grid en el contenedor */
+      }
+      
+      .smile-item {
+        position: relative;
+        width: 100%; /* Ocupa todo el ancho de la celda del grid */
+       
+        height:  281px; /* Ajusta el tamaño según sea necesario */
+        display: flex;
+        justify-content: center; /* Centra las imágenes dentro del smile-item */
+        align-items: center; /* Centra las imágenes verticalmente dentro del smile-item */
+        overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
+      }
+      .tamaño{
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+      }
+      .image-after,
+      .image-before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.3s ease;
+      }
+      
+      .image-before {
+        opacity: 0; /* Oculta la imagen "before" por defecto */
+      }
+      
+      /* Mostrar la imagen "before" al pasar el ratón o hacer clic */
+      .smile-item:hover .image-after,
+      .smile-item.clicked .image-after {
+        opacity: 0;
+      }
+      
+      .smile-item:hover .image-before,
+      .smile-item.clicked .image-before {
+        opacity: 1;
+      }
+      
+      .section-smile h1 {
+        background-color: #009ec0;
+        text-align: center;
+       color: white;
+        font-size: 18px;
+      }
+
+      /* Instagram */
+
+      .instagram{
+        padding:30px ;
+      }
+      .instagram h2{
+        font-size: xxx-large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        margin-bottom: 50px;
+      
       }
       /* Estilos para la sección */
 .Agenda {
@@ -957,14 +1035,27 @@ li {
         font-size: 30px;
         border-radius: 10px;
     }
-  .modalV
-  {
-    display: none;
-   
-}
+    .modalV
+    {
+        display: none;
+    }
+    .modalV2{
+        display: none;
+    }
     
+    .container-instagram{
+       display: flex;
+       justify-content: space-around;
+    }
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
+   .container-instagram{
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    justify-content: center; /* Centra los elementos verticalmente en el contenedor */
+    align-items: center; /* Centra los elementos horizontalmente en el contenedor */
+    height: auto;
+   }
     /* Ajustes para la portada */
     .portada {
         background-size: cover;
@@ -1503,8 +1594,23 @@ li {
         top: 10px;
         color: white;
         font-size: 25px;
+    } #close2{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: white;
+        font-size: 25px;
     }
-    
+    .smile-container {
+        grid-template-columns: repeat(1, 1fr); /* Dos columnas en pantallas más pequeñas */
+      }
+      .smile-item{
+        height: 225px;
+      }
+      .section-smile h2 {
+        font-size: xx-large;
+       
+    }
   
     
     .travel-card-pricing {
@@ -1560,8 +1666,36 @@ li {
         overflow-y: auto;
        
       }
-      /* estilos para seccion de detalles */
-   
+      .modalV2 {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5) ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        overflow: auto;
+        transform: scale(0);
+        transition: 0.3s ease-in;
+       
+      }
+      .openmodal2{
+        transform: scale(1);
+       transition: 0.3s ease-in;
+      }
+      .container-modalV2{
+        background-color: #00bcd4;
+        width: 80%;
+        padding: 20px;
+        height: 90%;
+        overflow-y: auto;
+       
+      }
+      
+    
      
 }
 
