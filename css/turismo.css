@@ -1673,7 +1673,7 @@ ol {
     }
 
     p {
-        font-size: 0.7em;
+        font-size: 0.8em;
         /* Ajusta el tamaño de fuente del párrafo */
     }
 
@@ -1954,7 +1954,7 @@ ol {
     }
 
     .grid-list li {
-        font-size: xx-small;
+        font-size: x-small;
         /* Reducir el tamaño de fuente en móviles */
         padding: 8px;
         /* Reducir el padding */
@@ -1971,6 +1971,7 @@ ol {
         right: 10px;
         top: 10px;
         color: white;
+        background-color: transparent;
         font-size: 37px;
     }
 
@@ -1979,6 +1980,7 @@ ol {
         right: 10px;
         top: 10px;
         color: white;
+        background-color: transparent;
         font-size: 37px;
     }
 
