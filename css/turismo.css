@@ -308,6 +308,36 @@ body {
     /* Color del texto */
 }
 
+.section-info-tourism{
+    background-color:#c2daf2;
+    text-align: center;
+    font-size: 30px;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+
+.section-info-tourism-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.section-info-tourism-card{
+    background-color: #f2f4f5;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 40%;
+    min-height: 50%;
+    margin-bottom: 0.35rem;
+}
+
+
 .galery {
     padding: 20px;
     background-color: white;
@@ -693,11 +723,15 @@ body {
 
 /* Estilo del párrafo */
 .section-content p {
+    text-align: justify;
     font-size: 16px;
     line-height: 1.6;
     color: #ffffff;
 }
 
+.section-content li {
+    color: #fff;
+}
 
 /* Estilo para el ícono */
 .full-width-section .ajusteIcon {
@@ -1067,6 +1101,43 @@ li {
     /* Aumenta el brillo de la imagen en hover */
 }
 
+
+.tratamientos-precios{
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.tratamientos-precios ul{
+    font-size: 1.5rem;
+    text-align: left;
+    list-style-type: square;
+}
+
+.tratamientos-precios span{
+    font-weight: bold;
+}
+
+.tratamientos-info{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.tratamientos-info p{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.tratamientos-info ul{
+    font-size: 1.5rem;
+    line-height: 1rem;
+    text-align: left;
+    margin-top: 0.2rem;
+}
+
+
 .section-comentarios {
     margin-top: 100px;
     margin-left: 98px;
@@ -1367,6 +1438,38 @@ ol {
         text-align: center;
     }
 
+    .section-info-tourism{
+        background-color:#c2daf2;
+        text-align: center;
+        font-size: 30px;
+        padding: 1rem;
+        height: 60%;
+        color: #000;
+    }
+    
+    .section-info-tourism-cards{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+    }
+    
+    .section-info-tourism-card{
+        color: #000;
+        background-color: #f2f4f5;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        padding: 0.5rem;
+        width: 80%;
+        margin-bottom: 0.35rem;
+    }
+
+    .section-info-tourism-card p{
+      color: #000;
+    }
+
     .services-section {
         margin-top: 50px;
         flex-direction: column;
@@ -1455,8 +1558,14 @@ ol {
     }
 
     .section-content p {
+        text-align: justify;
+        color: #fff;
         font-size: 1rem;
         /* Ajusta el tamaño del párrafo */
+    }
+
+    .section-content li{
+        color: #fff;
     }
 
     .section-dentistas h1 {
