@@ -262,6 +262,66 @@ body {
     /* Asegura que este div esté arriba de otros divs */
 }
 
+
+
+.section-profesionales-info { 
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.section-profesionales-info h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.slider-doctores {
+    overflow: hidden;
+    width: 95%;	
+    margin: auto;
+}
+
+.slider-doctores-info{
+    gap: 2rem;
+    display: flex;
+    padding: 5px;
+    width: 400%;
+    text-align: center;
+    align-items: center;
+    align-items: center;
+    animation: cambio 20s infinite alternate linear;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.profesionales-info-doctor{
+    color: #000;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.profesionales-info-doctor p{
+    color:#000;
+    font-size: 1.5rem;
+}
+
+
 .services-section {
     display: flex;
     /* Usa Flexbox para alinear los elementos en una fila */
@@ -308,34 +368,6 @@ body {
     /* Color del texto */
 }
 
-.section-info-tourism{
-    background-color:#c2daf2;
-    text-align: center;
-    font-size: 30px;
-    padding: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    border-radius: 10px;
-}
-
-.section-info-tourism-cards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.section-info-tourism-card{
-    background-color: #f2f4f5;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    padding: 0.5rem;
-    width: 40%;
-    min-height: 50%;
-    margin-bottom: 0.35rem;
-}
 
 
 .galery {
@@ -512,6 +544,8 @@ body {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    text-align: center;
+    
 }
 
 .travel-card-text {
@@ -581,13 +615,15 @@ body {
     /* Esquinas redondeadas */
     padding: 15px;
     /* Espaciado interno para la lista */
-    font-size: x-small;
+    font-size: small;
     /* Tamaño de fuente */
     color: #333;
     /* Color del texto */
 }
 
 .condiciones li {
+    font-size: 1rem;
+
     margin-bottom: 10px;
     /* Espacio entre elementos de la lista */
     line-height: 1.6;
@@ -751,6 +787,10 @@ body {
     /* Ajusta el padding según lo necesites */
     box-sizing: border-box;
     /* Asegura que el padding se incluya en el tamaño total del contenedor */
+}
+
+.section-afiliacion p {
+    color: #000;
 }
 
 /* Estilos para la imagen */
@@ -1101,21 +1141,30 @@ li {
     /* Aumenta el brillo de la imagen en hover */
 }
 
-
 .tratamientos-precios{
     padding: 1rem;
     margin-top: 1rem;
     width: 100%;
 }
 
-.tratamientos-precios ul{
-    font-size: 1.5rem;
-    text-align: left;
-    list-style-type: square;
+.precios-tabla-head{
+    width: 100%;
 }
 
-.tratamientos-precios span{
-    font-weight: bold;
+.tratamientos-precios-tabla{
+    width: 100%;
+}
+
+.precios-tabla-titulo{
+    font-size: 3rem;
+}
+
+.precios-tabla-fila{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
 }
 
 .tratamientos-info{
@@ -1438,37 +1487,63 @@ ol {
         text-align: center;
     }
 
-    .section-info-tourism{
-        background-color:#c2daf2;
-        text-align: center;
-        font-size: 30px;
+    .section-profesionales-info { 
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
         padding: 1rem;
-        height: 60%;
-        color: #000;
-    }
-    
-    .section-info-tourism-cards{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 0.4rem;
-    }
-    
-    .section-info-tourism-card{
-        color: #000;
-        background-color: #f2f4f5;
-        font-size: 1.5rem;
-        border-radius: 10px;
-        padding: 0.5rem;
-        width: 80%;
-        margin-bottom: 0.35rem;
     }
 
-    .section-info-tourism-card p{
-      color: #000;
+    .section-profesionales-info h3 {
+        font-size: 2rem;
     }
+
+    .slider-doctores {
+        overflow: hidden;
+        width: 95%;	
+        margin: auto;
+    }
+
+    .slider-doctores-info{
+        gap: 2rem;
+        display: flex;
+        padding: 5px;
+        width: 400%;
+        text-align: center;
+        align-items: center;
+        align-items: center;
+        animation: cambio 20s infinite alternate linear;
+    }
+    
+    @keyframes cambio {
+        0% {margin-left: 0;}
+        20% {margin-left: 0;}
+        
+        25% {margin-left: -100%;}
+        45% {margin-left: -100%;}
+        
+        50% {margin-left: -200%;}
+        70% {margin-left: -200%;}
+        
+        75% {margin-left: -300%;}
+        100% {margin-left: -300%;}
+    }
+
+    .profesionales-info-doctor{
+        color: #000;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .profesionales-info-doctor p{
+        color:#000;
+        font-size: 1.5rem;
+    }
+
+
+    
 
     .services-section {
         margin-top: 50px;
@@ -1529,8 +1604,6 @@ ol {
     }
 
     .galery {
-        margin-top: -40px;
-        ;
         /* Ajusta el margen superior */
     }
 
@@ -1622,6 +1695,40 @@ ol {
         /* Ajusta el ancho de las tarjetas */
     }
 
+    .tratamientos-precios{
+        padding: 1.2rem;
+        margin-top: 1rem;
+        width: 100%;
+    }
+    
+    .tratamientos-precios-tabla{
+        width: 100%;
+    }
+
+    .precios-tabla-encabezado{
+         
+    }
+    
+    .precios-tabla-titulo{
+        font-size: 2rem;
+    }
+    
+    .precios-tabla-fila{
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+        gap: 0.5rem;
+    }
+
+    .precios-tabla-fila-tratamiento{
+        text-align: left;
+    }
+
+    .precios-tabla-fila-precio{
+        text-align: right;
+    }
 
     .policy-section h1,
     .policy-section h2,
@@ -2067,7 +2174,7 @@ ol {
         /* Reducir el tamaño de fuente en móviles */
         padding: 8px;
         /* Reducir el padding */
-        text-align: center;
+        text-align: center; 
         background-color: #ffffff;
     }
 
