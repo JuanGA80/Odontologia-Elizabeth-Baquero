@@ -1,0 +1,10 @@
+@import url("../../components/header.css");
+@import url("../../base/tipography.css");
+@import url("../../components/footer.css");
+@import url("../../components/botones-flotantes.css");
+@import url("../../components/mapa.css");
+
+body {
+  background-color: #ededed;
+  position: relative;
+}

@@ -1,0 +1,123 @@
+/* version mobile */
+
+
+.contacto {
+  background-color: #05a6e1;
+  width: 200px;
+  padding: 12px 30px 12px 40px;
+  position: fixed;
+  bottom: 6vh;
+  right: 1.3em;
+  border-radius: 21px;
+  transition: 0.7s;
+  z-index: 1;
+  text-align: left;
+  cursor: pointer;
+}
+
+@keyframes crecer {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.contacto p {
+  color: #fff;
+  font-size: 20px;
+}
+.icono_principal {
+  position: fixed;
+  bottom: 5vh;
+  right: 1em;
+  z-index: 5;
+  animation: pulse 2s infinite;
+  border-radius: 50%;
+  width: 70px;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(1.1);
+    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+  }
+}
+.contactos {
+  transform: translateY(100%);
+  position: fixed;
+  bottom: 17vh;
+  right: 5px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  z-index: 1;
+}
+.aparecer {
+  position: fixed;
+  bottom: 19vh;
+  right: 3px;
+  transition: 0.5s;
+  z-index: 998;
+  transform: translateY(0);
+  visibility: visible;
+  z-index: 1;
+}
+
+.contactos img {
+  width: 80%;
+}
+
+/* start 376px */
+@media (min-width: 376px) {
+  
+}
+
+/* start tablets */
+@media (min-width: 480px) {
+
+}
+
+/* start desktop */
+@media (min-width: 767px) {
+  
+  .contactos {
+    bottom: 22vh;
+    right: 2rem;
+  }
+
+  .aparecer {
+    bottom: 22vh;
+    right: 2rem;
+  }
+
+  .icono_principal {
+    bottom: 5vh;
+    right: 2rem;
+    width: 110px;
+    height: 110px;
+  }
+
+  .contacto {
+    bottom: 8vh;
+    right: 1.3em;
+  }
+
+  .contactos img {
+    width: 90px;
+    height: 90px;
+  } 
+
+}
