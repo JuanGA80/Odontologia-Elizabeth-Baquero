@@ -1,7 +1,8 @@
 let listElements = document.querySelectorAll('.list__button--click');
 
 listElements.forEach( listElements =>{
-  listElements.addEventListener('click', ()=>{
+  listElements.addEventListener('click', (e)=>{
+      e.preventDefault();
       listElements.classList.toggle('arrow');
       let height = 0;
       let menu = listElements.nextElementSibling;

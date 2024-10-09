@@ -271,7 +271,7 @@ body {
     padding: 1rem;
 }
 
-.section-profesionales-info h3 {
+.section-profesionales-info h2 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 0.5rem;
@@ -353,7 +353,7 @@ body {
     /* Espacio debajo del icono */
 }
 
-.service-item h3 {
+.service-item h4 {
     align-items: center;
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -369,11 +369,19 @@ body {
 }
 
 
+/* section images galery */
 
 .galery {
     padding: 20px;
     background-color: white;
     margin-top: 0;
+}
+
+.galery-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000000;
+    margin-top: 40px;
 }
 
 .row {
@@ -419,21 +427,18 @@ body {
     /* Amplía la imagen al 110% */
 }
 
-.header {
-    text-align: center;
 
-    font-size: 2.5rem;
-    color: #000000;
-    margin-top: 40px;
-}
 
 .header-footer {
     padding: 6rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     color: #000000;
-    /* Color del título */
+    font-weight: bold;
 }
+
+
+/*  */
 
 .brands-section {
     overflow: hidden;
@@ -496,7 +501,7 @@ body {
 
 }
 
-.travel-card h3 {
+.travel-card h2 {
     margin: 0;
     font-size: 50px;
     color: #333;
@@ -635,8 +640,12 @@ body {
     /* Eliminar margen inferior en el último elemento */
 }
 
-
-
+.title-container h4 {
+    font-size: 1.5rem;
+    margin: 0;
+    /* Centra el icono y el título */
+    color: #000;
+}
 
 
 
@@ -751,7 +760,7 @@ body {
 }
 
 /* Estilo del título */
-.section-content h1 {
+.section-content h3 {
     color: white;
     font-size: 30px;
     margin-bottom: 20px;
@@ -814,6 +823,8 @@ body {
     /* Elimina el espacio extra debajo de la imagen */
 }
 
+/* section policy */
+
 /* Estilos para el texto */
 .section-text {
     text-align: center;
@@ -823,7 +834,7 @@ body {
 }
 
 /* Opcional: Estilos para el título */
-.section-text h1 {
+.section-text h2 {
     font-size: 2rem;
     /* Ajusta el tamaño del texto según sea necesario */
     margin-bottom: 10px;
@@ -836,7 +847,8 @@ body {
     /* Ajusta el tamaño del texto según sea necesario */
 }
 
-/* seccion de smile */
+/* section de smile */
+
 .section-smile {
     padding: 42px;
 }
@@ -914,7 +926,7 @@ body {
     opacity: 1;
 }
 
-.section-smile h1 {
+.smile-item figcaption {
     background-color: #009ec0;
     text-align: center;
     color: white;
@@ -960,7 +972,6 @@ body {
     /* Espacio entre los elementos */
 
 }
-
 /* Estilos para cada tarjeta */
 .infocitas {
     flex: 1 1 30%;
@@ -969,7 +980,7 @@ body {
 
 }
 
-.infocitas h2 {
+.infocitas h3 {
     position: relative;
     /* Para asegurar que la línea se posicione correctamente */
     margin-top: 30px;
@@ -979,10 +990,8 @@ body {
     border-top: 2px solid #ffff00;
     /* La línea */
 }
-
-
 /* Estilos para los encabezados y listas */
-.Agenda h1 {
+.Agenda h2 {
     text-align: center;
     padding: 30px;
     font-size: 2rem;
@@ -990,7 +999,8 @@ body {
     padding-bottom: 0;
 }
 
-h2 {
+h3 {
+    font-size: 1.6rem;
     font-family: wfont_0d9a8c_669b17dd29a74f0d89400789759b7b28, wf_669b17dd29a74f0d894007897, orig_source_serif_pro_semibold;
     margin-top: 0;
     margin-bottom: 10px;
@@ -1051,7 +1061,7 @@ li {
     /* Espacio entre la imagen y el texto */
 }
 
-.section-info h2 {
+.section-info h3 {
     margin: 0;
     padding: 10px 0;
     /* Espaciado interno para separar los elementos */
@@ -1117,15 +1127,16 @@ li {
     transition: filter 0.3s;
 }
 
-.tratamiento-card h3 {
-    position: relative;
+.tratamiento-card figcaption {
+    position: absolute;
     z-index: 1;
     color: #fff;
     /* Color del texto sobre la imagen */
     font-size: 18px;
-    margin: 0;
     padding: 20px;
-    margin-top: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     /* Sombra para legibilidad */
 }
@@ -1275,17 +1286,6 @@ p {
     border-radius: 8px;
 }
 
-.arrow {
-    border-radius: 2rem;
-    background: #bcb3b3;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    z-index: 1;
-}
-
 .arrow-left {
     position: absolute;
     left: -12px;
@@ -1299,7 +1299,7 @@ p {
 .policy-section {
     text-align: justify;
     margin-top: 100px;
-    padding: 20px;
+    padding: 30px 50px;
     background: #0c4179;
 }
 
@@ -1310,12 +1310,10 @@ ol {
     color: #000000;
 }
 
-.policy-section h2 {
+.policy-section h3 {
     margin-top: 20px;
-}
-
-.policy-section h1 {
     color: #05a6e1;
+    font-size: 2rem;
 }
 
 .policy-section p {
@@ -1447,7 +1445,7 @@ ol {
         /* Ajusta el tamaño de la imagen */
     }
 
-    .section-text h1 {
+    .section-text h2 {
         font-size: 2rem;
         /* Ajusta el tamaño del título */
     }
@@ -1494,7 +1492,7 @@ ol {
         padding: 1rem;
     }
 
-    .section-profesionales-info h3 {
+    .section-profesionales-info h2 {
         font-size: 2rem;
     }
 
@@ -1778,8 +1776,11 @@ ol {
     .header-footer {
         margin-top: 25px;
         padding: 1rem;
-
+        font-size: 1.8rem;
+        text-align: center;
     }
+
+    /* Section Dentistas */
 
     .section-dentistas {
 
@@ -1948,11 +1949,6 @@ ol {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    .travel-card h3 {
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-
     .travel-card-content {
         grid-template-columns: 1fr;
         /* Una sola columna en pantallas pequeñas */
@@ -2000,7 +1996,8 @@ ol {
         /* Centra el icono y el título */
     }
 
-    .title-container h2 {
+    .title-container h4 {
+        font-size: 70px;
         margin: 0;
         /* Centra el icono y el título */
         color: white;
@@ -2087,8 +2084,7 @@ ol {
         /* Ajusta el relleno para pantallas más pequeñas */
     }
 
-    .section-info h2,
-    h3 {
+    .section-info h3 {
         text-align: center;
     }
 
@@ -2120,7 +2116,7 @@ ol {
         /* Opcional: Eliminar sombra en pantallas pequeñas */
     }
 
-    .travel-card h3 {
+    .travel-card h2 {
         font-size: 32px;
         /* Reducir el tamaño de fuente del título */
         margin-top: 20px;

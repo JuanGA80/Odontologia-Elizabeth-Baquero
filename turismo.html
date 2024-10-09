@@ -7,14 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Odontología Elizabeth Baquero</title>
   <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
+  <!-- Style Sheet -->
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Tasty CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" />
+  <!-- Font-Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- Swiper JS CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- AOS -->
   <link rel="stylesheet" href="aos/aos.css" />
-  <link rel="stylesheet" href="css/turismo.css">
   <script src="aos/aos.js"></script>
   <!-- Codigo de analitycs  -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CT7GPSNPXD"></script>
@@ -86,6 +91,7 @@
       phone_conversion_number: "6012371655",
     });
   </script>
+  <!-- Styles Swiper JS -->
   <style>
     .swiper {
       width: 90%;
@@ -138,8 +144,8 @@
 <body>
   <header>
     <div class="item_header">
-      <p><a href="tel:6012731655" target="_blank">Agenda tu cita</a></p>
-      <p><a href="tel:6012731655" target="_blank">Teléfono: 6012731655</a></p>
+      <span><a href="tel:6012731655" target="_blank">Agenda tu cita</a></span>
+      <span><a href="tel:6012731655" target="_blank">Teléfono: 6012731655</a></span>
     </div>
     <nav class="navegador">
       <div class="menu-bar">
@@ -164,13 +170,14 @@
         </li>
         <li><a href="index.html#servicios" class="menu_links">Tratamientos</a></li>
         <li><a href="turismo.html" class="menu_links">Turismo</a></li>
-        <li><a href="#ubicacion" class="menu_links">Ubicación</a></li>
-        <li><a href="#contactodos" class="menu_links">Contacto</a></li>
+        <li><a href="./index.html#ubicacion" class="menu_links">Ubicación</a></li>
+        <li><a href="./index.html#contactodos" class="menu_links">Contacto</a></li>
       </ul>
     </nav>
   </header>
+
   <!-- inicio -->
-  <div class="portada">
+  <section class="portada">
     <img src="imagenes/turismo/portada1.jpeg" alt="" class="portadadesktop">
     <img src="imagenes/turismo/portada2.jpg" alt="" class="portadaMobil">
     <!-- inicio 
@@ -179,12 +186,12 @@
                 Mas información  <svg  xmlns="http://www.w3.org/2000/svg"  width="24px"  height="24px"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-plane-tilt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.5 6.5l3 -2.9a2.05 2.05 0 0 1 2.9 2.9l-2.9 3l2.5 7.5l-2.5 2.55l-3.5 -6.55l-3 3v3l-2 2l-1.5 -4.5l-4.5 -1.5l2 -2h3l3 -3l-6.5 -3.5l2.5 -2.5l7.5 2.5z" /></svg>
             </button>
         </div>-->
+  </section>
 
-  </div>
   <!-- informacion -->
-  <div class="full-width-section">
+  <section class="full-width-section">
     <div class="section-content" id="sectionContent">
-      <h1>Profesionalismo</h1>
+      <h3>Profesionalismo</h3>
       <p id="contentShort">
         Contamos con especialistas en distintas áreas como (endodoncia, rehabilitación, cirugía oral, periodoncia,
         ortodoncia, estética dental, odontopediatría e implantología), con amplia experiencia profesional y en constante
@@ -202,7 +209,7 @@
         proporcionar tratamientos de calidad y resultados sobresalientes para cada uno de nuestros pacientes.
       </p>
 
-      <h1>Experiencia</h1>
+      <h3>Experiencia</h3>
       <p>
         Contamos con una amplia experiencia laboral de 27 años. Desde 1997 perfeccionado sonrisas Ofrecemos todos los
         servicios de la odontología moderna contamos con todos los especialistas en las distintas áreas como
@@ -214,10 +221,10 @@
           <button id="toggleButton" class="toggle-button">Leer más</button>-->
     </div>
     <i class="fas fa-briefcase ajusteIcon"></i>
-  </div>
+  </section>
 
   <section class="section-profesionales-info">
-    <h3>Nuestros Profesionales</h3>
+    <h2>Nuestros Profesionales</h2>
     <div class="slider-doctores">
       <div class="slider-doctores-info">
         <div class="profesionales-info-doctor">
@@ -245,40 +252,41 @@
   <section class="section-tratamientos">
     <h2>Nuestros tratamientos Dentales</h2>
     <div class="tratamientos-container">
-      <div class="tratamiento-card">
+      <figure class="tratamiento-card">
         <img src="imagenes/turismo/tratamientos/ortodoncia.jpg" alt="Ortodoncia">
-        <h3>Ortodoncia</h3>
-      </div>
-      <div class="tratamiento-card">
+        <figcaption>Ortodoncia</figcaption>
+      </figure>
+      <figure class="tratamiento-card">
         <img src="imagenes/turismo/tratamientos/implates dentales.jpg" alt="Implantes dentales">
-        <h3>Implantes Dentales</h3>
-      </div>
-      <div class="tratamiento-card">
+        <figcaption>Implantes Dentales</figcaption>
+      </figure>
+      <figure class="tratamiento-card">
         <img src="imagenes/turismo/tratamientos/endodoncia.jpg" alt="Endodoncia">
-        <h3>Endodoncia</h3>
-      </div>
-      <div class="tratamiento-card">
+        <figcaption>Endodoncia</figcaption>
+      </figure>
+      <figure class="tratamiento-card">
         <img src="imagenes/turismo/tratamientos/blanqueamiento.jpg" alt="Blanqueamiento">
-        <h3>Blanqueamiento</h3>
-      </div>
-      <div class="tratamiento-card">
+        <figcaption>Blanqueamiento</figcaption>
+      </figure>
+      <figure class="tratamiento-card">
         <img src="imagenes/turismo/tratamientos/periodoncia.jpg" alt="Periodoncia">
-        <h3>Periodoncia</h3>
-      </div>
-      <div class="tratamiento-card">
+        <figcaption>Periodoncia</figcaption>
+      </figure>
+      <figure class="tratamiento-card">
         <img src="imagenes/turismo/tratamientos/cirugia.jpg" alt="extraccion">
-        <h3>Cirugía Oral</h3>
-      </div>
-      <div class="tratamiento-card">
+        <figcaption>Cirugía Oral</figcaption>
+      </figure>
+      <figure class="tratamiento-card">
         <img src="imagenes/turismo/tratamientos/protesis.jpg" alt="protesis">
-        <h3>Prótesis Dentales</h3>
-      </div>
-      <div class="tratamiento-card">
+        <figcaption>Prótesis Dentales</figcaption>
+      </figure>
+      <figure class="tratamiento-card">
         <img src="imagenes/turismo/tratamientos/cuidado.webp" alt="cuidado">
-        <h3>Cuidado Preventivo</h3>
-      </div>
+        <figcaption>Cuidado Preventivo</figcaption>
+      </figure>
     </div>
-    <section class="tratamientos-precios">
+
+    <article class="tratamientos-precios">
       <table class="tratamientos-precios-tabla">
         <tr class="precios-tabla-encabezado">
           <th class="precios-tabla-titulo" colspan="2">Precios Estimados de Tratamientos</th>
@@ -302,7 +310,7 @@
         </tr>`
         <tr class="precios-tabla-fila">
           <td class="precios-tabla-fila-tratamiento">Botox</td>
-          <td class="precios-tabla-fila-precio">$ dólares</td>
+          <td class="precios-tabla-fila-precio">$300 dólares</td>
         </tr>
         <tr class="precios-tabla-fila">
           <td class="precios-tabla-fila-tratamiento">Coronas Zirconio monolítico</td>
@@ -313,46 +321,41 @@
           <td class="precios-tabla-fila-precio">$75 dólares</td>
         </tr>
       </table>
-    </section>
+    </article>
   </section>
 
   <!-- galeria de viaje -->
   <section class="galery">
-    <div class="header">
-      <h1>Destinos en colombia</h1>
-    </div>
+    <h3 class="galery-title">Destinos en colombia</h3>
     <div class="services-section">
       <div class="service-item">
-        <h3>
-          Alojamiento
+        <h4>Alojamiento
           <img src="imagenes/icons/hotel.png" alt="Icono de Alojamiento" class="service-icon">
-        </h3>
+        </h4>
         <p>Más de 2,6+ M de opciones de alojamiento en 220 países</p>
       </div>
       <div class="service-item">
-        <h3>
-          Traslados
-          <img src="imagenes/icons/carro.png" alt="Traslados" class="service-icon">
-        </h3>
+        <h4>Traslados
+          <img src="imagenes/icons/carro.png" alt="Icono Traslados" class="service-icon">
+        </h4>
         <p>Cualquier tipo de traslado que necesites, desde vehículos estándar a premium, disponible en más de 100 países
         </p>
       </div>
       <div class="service-item">
-        <h3>
-          Vuelos
-          <img src="imagenes/icons/avion.png" alt="Vuelo" class="service-icon">
-        </h3>
+        <h4>Vuelos
+          <img src="imagenes/icons/avion.png" alt="Icono Vuelo" class="service-icon">
+        </h4>
         <p>Billetes aéreos de 350 aerolíneas de todo el mundo, hasta 9 pasajeros en una misma reserva</p>
       </div>
       <div class="service-item">
-        <h3>
-          Promociones
-          <img src="imagenes/icons/descuento.png" alt="Descuento" class="service-icon">
-        </h3>
+        <h4>Promociones
+          <img src="imagenes/icons/descuento.png" alt="Icono Descuento" class="service-icon">
+        </h4>
         <p>Descubre nuestra variedad de promciones para que disfrutes aun mas tu visita </p>
       </div>
     </div>
     <div class="row">
+
       <div class="column">
         <img src="imagenes/turismo/fotos/lugar8.webp" style="width:100%">
         <img src="imagenes/turismo/fotos/lugar3.jpg" style="width:100%">
@@ -363,8 +366,6 @@
         <img src="imagenes/turismo/fotos/lugar7.jpg" style="width:100%">
         <img src="imagenes/turismo/fotos/lugar5.jpg" style="width:100%">
         <img src="imagenes/turismo/fotos/lugar6.jpg" style="width:100%" class="correcion">
-
-
       </div>
       <div class="column">
         <img src="imagenes/turismo/fotos/lugar9.jpg" style="width:100%">
@@ -378,52 +379,52 @@
 
       </div>
     </div>
-    <div class="header-footer">
-      <h1>Más de 100.000+ clientes de todo el mundo confían en nosotros</h1>
-    </div>
+    <p class="header-footer">Más de 100.000+ clientes de todo el mundo confían en nosotros</p>
   </section>
+
   <!-- Hoteles y Ajencias -->
   <section class="brands-section">
     <div class="carousel">
       <div class="carousel-wrapper">
-        <div class="carousel-item"><img src="imagenes/turismo/carousel/hotel1.png" alt="Marca 1"></div>
-        <div class="carousel-item"><img src="imagenes/turismo/carousel/viaje1.png" alt="Marca 2"></div>
-        <div class="carousel-item"><img src="imagenes/turismo/carousel/viaje2.png" alt="Marca 3"></div>
-        <div class="carousel-item"><img src="imagenes/turismo/carousel/hotel1.png" alt="Marca 1"></div>
-        <div class="carousel-item"><img src="imagenes/turismo/carousel/viaje1.png" alt="Marca 2"></div>
-        <div class="carousel-item"><img src="imagenes/turismo/carousel/viaje2.png" alt="Marca 3"></div>
-        <div class="carousel-item"><img src="imagenes/turismo/carousel/hotel1.png" alt="Marca 1"></div>
-        <div class="carousel-item"><img src="imagenes/turismo/carousel/viaje1.png" alt="Marca 2"></div>
-        <div class="carousel-item"><img src="imagenes/turismo/carousel/viaje2.png" alt="Marca 3"></div>
-        <div class="carousel-item"><img src="imagenes/turismo/carousel/hotel1.png" alt="Marca 1"></div>
-        <div class="carousel-item"><img src="imagenes/turismo/carousel/viaje1.png" alt="Marca 2"></div>
-        <div class="carousel-item"><img src="imagenes/turismo/carousel/viaje2.png" alt="Marca 3"></div>
+        <figure class="carousel-item"><img src="imagenes/turismo/carousel/hotel1.png" alt="Marca 1"></figure>
+        <figure class="carousel-item"><img src="imagenes/turismo/carousel/viaje1.png" alt="Marca 2"></figure>
+        <figure class="carousel-item"><img src="imagenes/turismo/carousel/viaje2.png" alt="Marca 3"></figure>
+        <figure class="carousel-item"><img src="imagenes/turismo/carousel/hotel1.png" alt="Marca 1"></figure>
+        <figure class="carousel-item"><img src="imagenes/turismo/carousel/viaje1.png" alt="Marca 2"></figure>
+        <figure class="carousel-item"><img src="imagenes/turismo/carousel/viaje2.png" alt="Marca 3"></figure>
+        <figure class="carousel-item"><img src="imagenes/turismo/carousel/hotel1.png" alt="Marca 1"></figure>
+        <figure class="carousel-item"><img src="imagenes/turismo/carousel/viaje1.png" alt="Marca 2"></figure>
+        <figure class="carousel-item"><img src="imagenes/turismo/carousel/viaje2.png" alt="Marca 3"></figure>
+        <figure class="carousel-item"><img src="imagenes/turismo/carousel/hotel1.png" alt="Marca 1"></figure>
+        <figure class="carousel-item"><img src="imagenes/turismo/carousel/viaje1.png" alt="Marca 2"></figure>
+        <figure class="carousel-item"><img src="imagenes/turismo/carousel/viaje2.png" alt="Marca 3"></figure>
       </div>
     </div>
   </section>
+
   <!-- Paquetes -->
   <section class="travel-card">
-    <h3>Descubre tu próximo destino</h3>
+    <h2>Descubre tu próximo destino</h2>
     <!-- Inicio del primer paquete -->
-    <div class="travel-card-content">
+    <article class="travel-card-content">
       <div class="travel-card-image-container">
         <div>
           <img src="imagenes/turismo/fotos/lugar11.jpg" alt="Destino Tropical" class="travel-card-image">
           <div class="travel-card-pricing">
             <!-- <div class="ahorras">Ahorras: MXN$2,000 </div> -->
-            <div class="detalle-incluye">Vuelo + Alojamiento + Traslados + Tours</div>
-            <div class="precio-final">Valor total del plan por persona:</div>
+            <span class="detalle-incluye">Vuelo + Alojamiento + Traslados + Tours</span>
+            <span class="precio-final">Valor total del plan por persona:</span>
             <!-- <div class="precio-hidden">MXN$15,000</div> -->
-            <div class="precio-normal">$1,418.34 USD</div>
+            <span class="precio-normal">$1,418.34 USD</span>
             <!-- <div class="precio-final-2personas">Final 2 personas: MXN$19,000</div> -->
             <!-- <div class="incluye">Sujeto a cambios tarifarios</div> -->
             <button class="hidden" id="More">Más información.</button>
             <div id="info2">
               <div class="travel-card-text">
-                <div class="title-container">
+                <header class="title-container">
                   <img src="imagenes/icons/marcador.png" alt="Marcador" class="title-icon">
-                  <h2>Miami - Bogotá - Miami</h2>
-                </div>
+                  <h4>Miami - Bogotá - Miami</h4>
+                </header>
                 <div class="icons-container">
                   <div class="stars-container">
                     <img src="imagenes/icons/star.png" alt="estrella">
@@ -472,10 +473,10 @@
           </div>
         </div>
         <div class="travel-card-text">
-          <div class="title-container">
+          <header class="title-container">
             <img src="imagenes/icons/marcador.png" alt="Marcador" class="title-icon">
-            <h2>Miami - Bogotá - Miami</h2>
-          </div>
+            <h4>Miami - Bogotá - Miami</h4>
+          </header>
           <div class="icons-container">
             <div class="stars-container">
               <img src="imagenes/icons/star.png" alt="estrella">
@@ -519,29 +520,29 @@
           </ul>
         </div>
       </div>
-    </div>
+    </article>
 
     <!-- Inicio del segundo paquete -->
-    <div class="travel-card-content">
+    <article class="travel-card-content">
       <div class="travel-card-image-container">
         <div>
           <img src="imagenes/turismo/fotos/lugar12.jpg" alt="Destino Tropical" class="travel-card-image">
           <div class="travel-card-pricing">
             <!-- <div class="ahorras">Ahorras: MXN$2,000 </div> -->
-            <div class="detalle-incluye">LA MAGIA DEL EJE CAFETERO</div>
-            <div class="detalle-incluye">Vuelo + Alojamiento + Traslados + Experiencias</div>
-            <div class="precio-final">Valor total del plan por persona:</div>
+            <span class="detalle-incluye">LA MAGIA DEL EJE CAFETERO</span>
+            <span class="detalle-incluye">Vuelo + Alojamiento + Traslados + Experiencias</span>
+            <span class="precio-final">Valor total del plan por persona:</span>
             <!-- <div class="precio-hidden">MXN$15,000</div> -->
-            <div class="precio-normal">$1,730.90 USD</div>
+            <span class="precio-normal">$1,730.90 USD</span>
             <!-- <div class="precio-final-2personas">Final 2 personas: MXN$19,000</div> -->
             <!-- <div class="incluye">Sujeto a cambios tarifarios</div> -->
             <button class="hidden" id="More2">Más información..</button>
             <div id="info2">
               <div class="travel-card-text">
-                <div class="title-container">
+                <header class="title-container">
                   <img src="imagenes/icons/marcador.png" alt="Marcador" class="title-icon">
-                  <h2>Miami - Bogotá - Miami</h2>
-                </div>
+                  <h4>Miami - Bogotá - Miami</h4>
+                </header>
                 <div class="icons-container">
                   <div class="stars-container">
                     <img src="imagenes/icons/star.png" alt="estrella">
@@ -588,10 +589,10 @@
           </div>
         </div>
         <div class="travel-card-text">
-          <div class="title-container">
+          <header class="title-container">
             <img src="imagenes/icons/marcador.png" alt="Marcador" class="title-icon">
-            <h2>Miami - Bogotá - Miami</h2>
-          </div>
+            <h4>Miami - Bogotá - Miami</h4>
+          </header>
           <div class="icons-container">
             <div class="stars-container">
               <img src="imagenes/icons/star.png" alt="estrella">
@@ -633,10 +634,11 @@
           </ul>
         </div>
       </div>
-    </div>
+    </article>
   </section>
+
   <!-- Modal del paquete uno -->
-  <div id="modalV" class="modalV">
+  <article id="modalV" class="modalV">
     <button id="close1">
       <i class="fa-solid fa-xmark" id="close1"></i>
     </button>
@@ -680,7 +682,8 @@
             </ul>
             </p>
           </div>
-          <p>Aloft Bogotá es un moderno hotel ubicado en la capital de Colombia, a 3 kilómetros del Aeropuerto Internacional El Dorado (BOG)..</p>
+          <p>Aloft Bogotá es un moderno hotel ubicado en la capital de Colombia, a 3 kilómetros del Aeropuerto
+            Internacional El Dorado (BOG)..</p>
           <ul class="condiciones">
             <li>Cotización sujeta a cambios al momento de solicitar reserva.</li>
             <li>Tarifas sujetas a cambios</li>
@@ -691,9 +694,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </article>
   <!-- Modal del paquete dos -->
-  <div id="modalV2" class="modalV2">
+  <article id="modalV2" class="modalV2">
     <button id="close2">
       <i class="fa-solid fa-xmark" id="close2"></i>
     </button>
@@ -748,83 +751,78 @@
         </div>
       </div>
     </div>
-  </div>
-  <br>
+  </article>
 
 
   <!-- seccion de sonrisas -->
   <section class="section-smile">
-    <div>
-      <h2>¡Descubre los cambios en nuestros pacientes! </h2>
-      <p>
-        Haz click en la imagen para ver las transformaciones y resultados sorprendentes.
-      </p>
-      <div class="smile-container">
-        <div class="smile-item">
-          <div class="image-after">
-            <img src="imagenes/turismo/smile/after1.JPG" alt="despues" class="tamaño">
-            <h1>After</h1>
-          </div>
-          <div class="image-before">
-            <img src="imagenes/turismo/smile/before1.JPG" alt="antes" class="tamaño">
-            <h1>Before</h1>
-          </div>
-        </div>
-        <!-- Par de imágenes -->
-        <div class="smile-item">
-          <div class="image-after">
-            <img src="imagenes/turismo/smile/after2.JPG" alt="despues" class="tamaño">
-            <h1>After</h1>
-          </div>
-          <div class="image-before">
-            <img src="imagenes/turismo/smile/before2.JPG" alt="antes" class="tamaño">
-            <h1>Before</h1>
-          </div>
-        </div>
-        <!-- Par de imágenes -->
-        <div class="smile-item">
-          <div class="image-after">
-            <img src="imagenes/turismo/smile/after3.JPG" alt="despues" class="tamaño">
-            <h1>After</h1>
-          </div>
-          <div class="image-before">
-            <img src="imagenes/turismo/smile/before3.JPG" alt="antes" class="tamaño">
-            <h1>Before</h1>
-          </div>
-        </div>
-        <!-- Par de imágenes -->
-        <div class="smile-item">
-          <div class="image-after">
-            <img src="imagenes/turismo/smile/after4.JPG" alt="despues" class="tamaño">
-            <h1>After</h1>
-          </div>
-          <div class="image-before">
-            <img src="imagenes/turismo/smile/before4.JPG" alt="antes" class="tamaño">
-            <h1>Before</h1>
-          </div>
-        </div>
-        <!-- Par de imágenes -->
-        <div class="smile-item">
-          <div class="image-after">
-            <img src="imagenes/turismo/smile/after5.JPG" alt="despues" class="tamaño">
-            <h1>After</h1>
-          </div>
-          <div class="image-before">
-            <img src="imagenes/turismo/smile/before5.JPG" alt="antes" class="tamaño">
-            <h1>Before</h1>
-          </div>
-        </div>
-        <!-- Par de imágenes -->
-        <div class="smile-item">
-          <div class="image-after">
-            <img src="imagenes/turismo/smile/after6.JPG" alt="despues" class="tamaño">
-            <h1>After</h1>
-          </div>
-          <div class="image-before">
-            <img src="imagenes/turismo/smile/before6.JPG" alt="antes" class="tamaño">
-            <h1>Before</h1>
-          </div>
-        </div>
+    <h2>¡Descubre los cambios en nuestros pacientes! </h2>
+    <p>Haz click en la imagen para ver las transformaciones y resultados sorprendentes.</p>
+    <div class="smile-container">
+      <div class="smile-item">
+        <figure class="image-after">
+          <img src="imagenes/turismo/smile/after1.JPG" alt="despues" class="tamaño">
+          <figcaption>After</figcaption>
+        </figure>
+        <figure class="image-before">
+          <img src="imagenes/turismo/smile/before1.JPG" alt="antes" class="tamaño">
+          <figcaption>Before</figcaption>
+        </figure>
+      </div>
+      <!-- Par de imágenes -->
+      <div class="smile-item">
+        <figure class="image-after">
+          <img src="imagenes/turismo/smile/after2.JPG" alt="despues" class="tamaño">
+          <figcaption>After</figcaption>
+        </figure>
+        <figure class="image-before">
+          <img src="imagenes/turismo/smile/before2.JPG" alt="antes" class="tamaño">
+          <figcaption>Before</fig>
+        </figure>
+      </div>
+      <!-- Par de imágenes -->
+      <div class="smile-item">
+        <figure class="image-after">
+          <img src="imagenes/turismo/smile/after3.JPG" alt="despues" class="tamaño">
+          <figcaption>After</figcaption>
+        </figure>
+        <figure class="image-before">
+          <img src="imagenes/turismo/smile/before3.JPG" alt="antes" class="tamaño">
+          <figcaption>Before</figcaption>
+        </figure>
+      </div>
+      <!-- Par de imágenes -->
+      <div class="smile-item">
+        <figure class="image-after">
+          <img src="imagenes/turismo/smile/after4.JPG" alt="despues" class="tamaño">
+          <figcaption>After</figcaption>
+        </figure>
+        <figure class="image-before">
+          <img src="imagenes/turismo/smile/before4.JPG" alt="antes" class="tamaño">
+          <figcaption>Before</figcaption>
+        </figure>
+      </div>
+      <!-- Par de imágenes -->
+      <div class="smile-item">
+        <figure class="image-after">
+          <img src="imagenes/turismo/smile/after5.JPG" alt="despues" class="tamaño">
+          <figcaption>After</figcaption>
+        </figure>
+        <figure class="image-before">
+          <img src="imagenes/turismo/smile/before5.JPG" alt="antes" class="tamaño">
+          <figcaption>Before</figcaption>
+        </figure>
+      </div>
+      <!-- Par de imágenes -->
+      <div class="smile-item">
+        <figure class="image-after">
+          <img src="imagenes/turismo/smile/after6.JPG" alt="despues" class="tamaño">
+          <figcaption>After</figc>
+        </figure>
+        <figure class="image-before">
+          <img src="imagenes/turismo/smile/before6.JPG" alt="antes" class="tamaño">
+          <figcaption>Before</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -832,32 +830,33 @@
 
   <!-- Agenda tu cita personalizada -->
   <section class="Agenda">
-    <h1>Una manera más accesible para tu cuidado dental </h1>
+    <h2>Una manera más accesible para tu cuidado dental </h2>
     <div class="Card-agenda">
-      <div class="infocitas">
-        <h2>1) Agenda una cita</h2>
+      <article class="infocitas">
+        <h3>1) Agenda una cita</h3>
         <ul>
           <li>Programa una consulta con uno de nuestros dentistas para discutir tus necesidades dentales.</li>
           <li>Proporcionamos un plan de tratamiento y una estimación del costo de la intervención.</li>
         </ul>
-      </div>
-      <div class="infocitas">
-        <h2>2) Visitanos</h2>
+      </article>
+      <article class="infocitas">
+        <h3>2) Visítanos</h3>
         <ul>
           <li>Una vez que decidas seguir adelante, te ayudaremos a planificar tu viaje y a buscar alojamiento.</li>
           <li>Al llegar recibirás la misma atención de alta calidad que nuestros pacientes locales.</li>
         </ul>
-      </div>
-      <div class="infocitas">
-        <h2>3) Sonríe y disfruta</h2>
+      </article>
+      <article class="infocitas">
+        <h3>3) Sonríe y disfruta</h3>
         <ul>
           <li>Después del tratamiento, tendrás tiempo de recuperarte y disfrutar de la ciudad antes de volver a casa.
           </li>
           <li>Se enviarán las instrucciones postratamiento y recomendaciones para cuidar la nueva sonrisa.</li>
         </ul>
-      </div>
+      </article>
     </div>
   </section>
+
   <section class="instagram">
     <h2>Nuestras visitas</h2>
     <div class="container-instagram">
@@ -983,9 +982,9 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide card_nosotros">
           <div class="card-content">
-            <div class="image">
+            <figure class="image">
               <img src="imagenes/turismo/comentarios/janeth.png" alt="" />
-            </div>
+            </figure>
 
             <div class="name-profesion">
               <span class="name">Janeth Anacona</span>
@@ -1003,11 +1002,11 @@
 
           </div>
         </div>
-        <div class="swiper-slide card_nosotros">
+        <article class="swiper-slide card_nosotros">
           <div class="card-content">
-            <div class="image">
+            <figure class="image">
               <img src="imagenes/turismo/comentarios/yudy.png" alt="" />
-            </div>
+            </figure>
 
             <div class="name-profesion">
               <span class="name">Yudy Espinel</span>
@@ -1023,12 +1022,12 @@
             </div>
 
           </div>
-        </div>
-        <div class="swiper-slide card_nosotros">
+        </article>
+        <article class="swiper-slide card_nosotros">
           <div class="card-content">
-            <div class="image">
+            <figure class="image">
               <img src="imagenes/turismo/comentarios/carolina.png" alt="" />
-            </div>
+            </figure>
 
             <div class="name-profesion">
               <span class="name">Carolina Avila</span>
@@ -1044,12 +1043,12 @@
             </div>
 
           </div>
-        </div>
-        <div class="swiper-slide card_nosotros">
+        </article>
+        <article class="swiper-slide card_nosotros">
           <div class="card-content">
-            <div class="image">
+            <figure class="image">
               <img src="imagenes/turismo/comentarios/ofelia.png" alt="" />
-            </div>
+            </figure>
 
             <div class="name-profesion">
               <span class="name">Ofelia Reyes</span>
@@ -1065,12 +1064,12 @@
             </div>
 
           </div>
-        </div>
-        <div class="swiper-slide card_nosotros">
+        </article>
+        <article class="swiper-slide card_nosotros">
           <div class="card-content">
-            <div class="image">
+            <figure class="image">
               <img src="imagenes/turismo/comentarios/andres.png" alt="" />
-            </div>
+            </figure>
 
             <div class="name-profesion">
               <span class="name">Andres Munar</span>
@@ -1086,13 +1085,13 @@
             </div>
 
           </div>
-        </div>
+        </article>
 
-        <div class="swiper-slide card_nosotros">
+        <article class="swiper-slide card_nosotros">
           <div class="card-content">
-            <div class="image">
+            <figure class="image">
               <img src="imagenes/turismo/comentarios/hellen.png" alt="" />
-            </div>
+            </figure>
 
             <div class="name-profesion">
               <span class="name">Hellen</span>
@@ -1106,9 +1105,8 @@
               <i class="fas fa-star"></i>
             </div>
 
-
           </div>
-        </div>
+        </article>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -1121,7 +1119,7 @@
   <section class="section-info">
     <img src="imagenes/turismo/equipodental.jpeg" alt="Equipo Dental">
     <div class="text">
-      <h2>Equipo Dental</h2>
+      <h3>Equipo Dental</h3>
       <p>Nuestros equipos de última tecnología y materiales biocompatibles de última generación nos permiten ofrecer
         tratamientos efectivos y estables a largo plazo. Contamos con equipo de radiografía periapical, scanner, cámara
         intraoral, entre otras tecnologías de punta, para hacer de la experiencia odontológica la más cómoda.</p>
@@ -1140,11 +1138,11 @@
 
   <!-- afiliacion -->
   <section class="section-afiliacion">
-    <div class="section-image">
+    <figure class="section-image">
       <img src="imagenes/turismo/asociacion.png" alt="">
-    </div>
+    </figure>
     <div class="section-text">
-      <h1>Afiliaciones a Asociaciones Profesionales</h1>
+      <h2>Afiliaciones a Asociaciones Profesionales</h2>
       <p>
         Federación colombiana de Odontólogos
       </p>
@@ -1153,9 +1151,8 @@
 
   <!-- Garantía y politicas -->
   <section class="policy-section">
-    <h1>Garantías y Políticas de Tratamiento</h1>
+    <h3>Garantías y Políticas de Tratamiento</h3>
     <p>
-
       <strong>Odontología Elizabeth Baquero</strong>, se compromete a velar por el bienestar físico y mental de sus
       empleados y contratistas; así como la seguridad de sus usuarios y visitantes; de igual forma, establece dentro de
       sus prioridades el control de los riesgos, el mejoramiento continuo y el fomento de un ambiente de trabajo seguro,
@@ -1163,8 +1160,9 @@
       necesarios para tal fin.
     </p>
   </section>
+
   <footer>
-    <div class="item_footer">
+    <article class="item_footer">
       <h4 class="list__button--click">MENÚ</h4>
       <ul>
         <li><a href="nosotros.html">Nosotros</a></li>
@@ -1175,8 +1173,8 @@
         <li><a href="#servicios">Tratamientos</a></li>
         <li><a href="#ubicacion">Ubicación</a></li>
       </ul>
-    </div>
-    <div class="item_footer">
+    </article>
+    <article class="item_footer">
       <h4 class="list__button--click">ESPECIALIDADES Y TRATAMIENTOS</h4>
       <div class="sub_item">
         <ul>
@@ -1194,8 +1192,8 @@
           <li><a href="#todo">Endodoncia</a></li>
         </ul>
       </div>
-    </div>
-    <div class="item_footer">
+    </article>
+    <article class="item_footer">
       <h4>REDES SOCIALES</h4>
       <ul>
         <li>
@@ -1216,15 +1214,15 @@
           Baquero S.A.S
         </p>
       </div>
-    </div>
-    <div class="item_footer">
+    </article>
+    <article class="item_footer">
       <p>
         Desarrollado por
         <a href="https://dentarios.com.mx/programacion.php" target="_blank">
           Agencia de Marketing Dentarios</a>
         © 2022
       </p>
-    </div>
+    </article>
   </footer>
 
   <script>

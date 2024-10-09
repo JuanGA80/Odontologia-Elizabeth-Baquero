@@ -1,0 +1,30 @@
+@import url("../base/reset.css");
+
+/* start mobile */
+
+
+
+/* end mobile */
+
+
+/* start 371px  */
+
+@media (min-width: 370px) {
+  
+}
+
+/* end 371px */
+
+/* start tablets */
+
+@media (min-width: 480px) {
+  
+}
+
+/* end tablets */
+
+/* desktop */
+@media (min-width: 767px) {
+  
+}
+/* end desktop */

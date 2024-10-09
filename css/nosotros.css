@@ -222,6 +222,7 @@
     margin-top: 20px;
 }
 .puntos_de_valor{
+    list-style-type: none;
     width: 100%;
     display:flex;
     flex-direction: column;
@@ -231,6 +232,7 @@
     padding: 20px 0px;
 }
 .item_puntos{
+    
     width: 90%;
     background-color:#009ec0;
     padding: 20px;
