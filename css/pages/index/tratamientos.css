@@ -1,0 +1,136 @@
+/* start mobile version */
+
+.tratamientos {
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+}
+.tratamientos h2 {
+  color: #4f4e4e;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+.tratamientos h2 span {
+  color: #186ac1;
+}
+
+.tratamientos {
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+}
+.tratamientos h2 {
+  color: #4f4e4e;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+.tratamientos h2 span {
+  color: #186ac1;
+}
+.servicios {
+  max-width: 1200px;
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.item_servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item_servicios img {
+  max-width: 50%;
+}
+.nombre_servicio {
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+}
+.nombre_servicio h4 {
+  color: #186ac1;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.card {
+  max-width: 1400px;
+  width: 100%;
+  margin: 50px auto 10px auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  perspective: 1100px;
+}
+.card__inner {
+  padding: 0px 7px;
+}
+.card__inner img {
+  max-width: 100%;
+}
+.descripcion_especialidades {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  top: calc(0% - 5px);
+  -webkit-perspective: 1100px;
+  perspective: 1100px;
+}
+.description_specialities {
+  width: 100%;
+  height: 60%;
+  background-color: #fff;
+  margin: auto;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  transition: 1s;
+}
+.titulo_especialidades {
+  width: 94%;
+  left: 3%;
+}
+
+.titulo_especialidades span {
+  font-size: 18px;
+}
+.description_specialities h2 {
+  font-size: 30px;
+  color: #0c4179;
+}
+.description_specialities p {
+  font-size: 18px;
+  text-align: justify;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.cerrar {
+  font-size: 40px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+/* start 376px  */
+
+@media (min-width: 376px) {
+  
+}
+
+/* start tablets */
+
+@media (min-width: 480px) {
+  
+}
+
+/* version desktop */
+@media (min-width: 767px) { 
+
+}

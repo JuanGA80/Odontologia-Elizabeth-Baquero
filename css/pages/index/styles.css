@@ -1,10 +1,28 @@
-@import url("../../components/header.css");
+@import url("../../base/reset.css");
 @import url("../../base/tipography.css");
-@import url("../../components/footer.css");
-@import url("../../components/botones-flotantes.css");
+
+@import url("../../components/header.css");
+
+
+@import url("./slide_contenedor.css");
+@import url("./tratamientos.css");
+
+
+@import url("../../components/formas-de-pago.css");
+@import url("../../components/formulario.css");
 @import url("../../components/mapa.css");
+@import url("../../components/botones-flotantes.css");
+@import url("../../components/footer.css");
+
 
 body {
+  box-sizing: border-box;
   background-color: #ededed;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
   position: relative;
 }

@@ -24,19 +24,23 @@ const tratamientoDiez = document.getElementById('trata_diez');
 const tratamientoOnce = document.getElementById('trata_once');
 
 
-tratamientoUno.addEventListener("click", function(){
+tratamientoUno.addEventListener("click", function(e){
+    e.preventDefault();
     modalTexto.classList.add('move_texto');
     textoUno.classList.add('aparecer_texto_dos');
 })
-tratamientoDos.addEventListener("click", function(){
+tratamientoDos.addEventListener("click", function(e){
+    e.preventDefault();
     modalTexto.classList.add('move_texto');
     textoDos.classList.add('aparecer_texto_dos');
 })
-tratamientoTres.addEventListener("click", function(){
+tratamientoTres.addEventListener("click", function(e){
+    e.preventDefault();
     modalTexto.classList.add('move_texto');
     textoTres.classList.add('aparecer_texto_dos');
 })
-tratamientoCuatro.addEventListener("click", function(){
+tratamientoCuatro.addEventListener("click", function(e){
+    e.preventDefault();
     modalTexto.classList.add('move_texto');
     textoCuatro.classList.add('aparecer_texto_dos');
 })

@@ -2,13 +2,10 @@
   margin: 0;
   padding: 0;
   border: 0;
-	font-size: 100%;
-	font: inherit;
 }
 
 body {
   box-sizing: border-box;
-  width: 100%;
+  width: 100vw;
   height: 100%;
-  overflow-x: hidden;
 }

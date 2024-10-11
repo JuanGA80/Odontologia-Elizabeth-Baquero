@@ -1,0 +1,153 @@
+/* Start mobile version */
+
+.slide_contenedor {
+  max-width: 100%;
+  max-height: 100vh;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  /*margin: auto;*/
+  margin: 20px auto 20px auto;
+  background-image: none;
+  background-size: cover;
+}
+
+.miSlider img {
+  width: 100%;
+  max-height: 100vh;
+  height: inherit;
+  object-fit: cover;
+  vertical-align: top;
+  transition: 2s;
+}
+
+.miSlider a {
+  position: absolute;
+  z-index: 99;
+  bottom: 2%;
+  left: 10%;
+  background: transparent;
+  text-decoration: none;
+  color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.barras {
+  position: absolute;
+  top: 5vh;
+  left: calc(10% - 20px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.barra {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #002c89;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.masuno {
+  animation: efecto1;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes efecto1 {
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    background-color: #05a6e1;
+    color: #fff;
+  }
+}
+
+.direcciones {
+  display: none;
+}
+
+
+/* start 376px */
+@media (min-width: 376px) {}
+
+/* start tablets */
+@media (min-width: 480px) {}
+
+/* start desktop */
+@media (min-width: 767px) {
+
+  .slide_contenedor {
+    max-width: 100%;
+    max-height: 100vh;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 20px auto;
+    background-image: url("../../../imagenes/fondoatras.png");
+    background-size: cover;
+  }
+
+  .miSlider img {
+    width: 100%;
+    max-height: 100vh;
+    height: inherit;
+    object-fit: contain;
+    vertical-align: top;
+    transition: 2s;
+  }
+
+  .miSlider a {
+    position: absolute;
+    z-index: 40;
+    bottom: 20%;
+    left: 20%;
+    background: transparent;
+    text-decoration: none;
+    color: transparent;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-size: 19px;
+    text-transform: uppercase;
+  }
+
+  .barras {  
+    top: calc(30% - 20px);
+    left: calc(5% - 20px);
+    width: auto;
+    height: auto;
+    gap: 10px;
+  }
+
+  .barra {
+    cursor: pointer;
+    height: 17px;
+    width: 17px;
+    margin: 0;
+    background-color: #feee00;
+    display: block;
+  }
+
+  .active {
+    transform: scale(1.1);
+  }
+
+  
+
+}
